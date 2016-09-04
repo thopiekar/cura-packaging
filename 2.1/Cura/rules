@@ -1,0 +1,27 @@
+#!/usr/bin/make -f
+
+# output every command that modifies files on the build system.
+export DH_VERBOSE = 1
+
+DEB_PACKAGE_VERSION ?= $(shell dpkg-parsechangelog -SVersion | cut -f2 -d":" | cut -f1 -d"~")
+
+%:
+	dh $@ --with python3 --buildsystem=cmake --parallel
+
+override_dh_clean:
+	rm -fv debian/cura.sharedmimeinfo
+	dh_clean -O--buildsystem=cmake -O--parallel
+
+override_dh_install:
+	dh_install --fail-missing
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+	-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH) \
+	-DURANIUM_SCRIPTS_DIR=/usr/share/uranium/scripts/ \
+	-DCURA_VERSION=$(DEB_PACKAGE_VERSION) \
+	-DCURA_BUILDTYPE=PPA
+
+override_dh_installmime:
+	cp -fv cura.sharedmimeinfo debian/cura.sharedmimeinfo
+	dh_installmime -O--buildsystem=cmake -O--parallel
