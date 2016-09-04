@@ -1,0 +1,26 @@
+Source: cura-extra-plugins
+Section: science
+Priority: optional
+Maintainer: Thomas Karl Pietrowski <thopiekar@googlemail.com>
+Build-Depends: debhelper (>=9), cmake, python3-all-dev
+Standards-Version: 3.9.6
+
+Package: cura-extra-plugins-all
+Architecture: all
+Depends:
+ cura-extra-plugin-doodle3d,
+ cura-extra-plugin-postprocessing,
+Description: 3rd party plugins for Cura
+ <insert long description, indented with spaces>
+
+Package: cura-extra-plugin-doodle3d
+Architecture: all
+Depends: ${misc:Depends}
+Description: 3rd party plugins for Cura
+ .
+
+Package: cura-extra-plugin-postprocessing
+Architecture: all
+Depends: ${misc:Depends}
+Description: postprocessing plugin for Cura
+ .
