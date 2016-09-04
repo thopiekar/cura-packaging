@@ -1,0 +1,3 @@
+usr/lib/*/libprotoc.a
+usr/lib/*/libprotoc.so
+usr/include/google/protobuf/compiler

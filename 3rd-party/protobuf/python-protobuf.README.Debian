@@ -1,0 +1,11 @@
+C++ backend
+===========
+
+As of protobuf 2.6.0, a new C++ backend for the Python protobuf bindings is
+available, which is faster than the default pure Python implementation. It can
+be activated by setting the following environment variables:
+
+PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=cpp
+PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION_VERSION=2
+
+ -- Robert Edmonds <edmonds@debian.org>  Thu, 28 Aug 2014 21:10:30 -0700

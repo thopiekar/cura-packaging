@@ -1,0 +1,95 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with autoreconf,python2 --parallel
+
+override_dh_auto_build-arch:
+	dh_auto_build --arch
+
+	# Generate the manpage.
+	xmlto man debian/protoc.xml
+
+	# Python build.
+	cd python && python setup.py build --cpp_implementation
+
+override_dh_auto_build-indep:
+	dh_auto_build --indep
+
+	# Java build.
+	ant -f debian/java-build-core.xml jar
+	#ant -f debian/java-build-util.xml jar
+
+override_dh_auto_test-arch:
+	echo "Skipping tests/checks at all!"
+#	dh_auto_test --arch
+#
+#ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
+#	# Python test.
+#	set -e; \
+#	export LD_LIBRARY_PATH=$(CURDIR)/src/.libs; \
+#	cd python && for python in $(shell pyversions -r); do \
+#		$$python setup.py test --cpp_implementation; \
+#	done
+#endif
+
+override_dh_auto_test-indep:
+	:
+
+override_dh_auto_clean-arch:
+	# Workaround for dh_auto_clean
+	make -j2 clean || true
+	#dh_auto_clean --arch
+
+	# Python clean.
+	set -e; \
+	cd python && for python in $(shell pyversions -r) $(shell py3versions -r); do \
+		$$python setup.py clean --all; \
+	done
+	rm -rf python/protobuf.egg-info
+
+override_dh_auto_clean-indep:
+	# Workaround for dh_auto_clean
+	make -j2 clean || true
+	#dh_auto_clean --indep
+
+	# Java clean.
+	ant -f debian/java-build-core.xml clean || true
+	#ant -f debian/java-build-util.xml clean || true
+	mh_clean || true
+
+override_dh_auto_install-arch:
+	dh_auto_install --arch
+
+	# Python install.
+	set -e; \
+	cd python && for python in $(shell pyversions -r); do \
+		$$python setup.py install --cpp_implementation \
+			--install-layout=deb --no-compile \
+			--root=$(CURDIR)/debian/python-protobuf; \
+	done
+	find $(CURDIR)/debian/python-protobuf -name 'protobuf-*-nspkg.pth' -delete
+
+	cd python && for python in $(shell py3versions -r); do \
+		$$python setup.py install --cpp_implementation \
+			--install-layout=deb --no-compile \
+			--root=$(CURDIR)/debian/python3-protobuf; \
+	done
+	find $(CURDIR)/debian/python3-protobuf -name 'protobuf-*-nspkg.pth' -delete
+
+override_dh_auto_install-indep:
+	dh_auto_install --indep
+
+	# Java install.
+	mh_install
+
+override_dh_install:
+	dh_install
+
+	# Convert doc dir to symlink for the -dev packages.
+	rm -rf $(CURDIR)/debian/libprotobuf-dev/usr/share/doc/libprotobuf-dev
+	ln -s libprotobuf9 $(CURDIR)/debian/libprotobuf-dev/usr/share/doc/libprotobuf-dev
+	rm -rf $(CURDIR)/debian/libprotoc-dev/usr/share/doc/libprotoc-dev
+	ln -s libprotoc9 $(CURDIR)/debian/libprotoc-dev/usr/share/doc/libprotoc-dev
+
+	# Remove compiler headers from libprotobuf-dev.
+	rm -rf $(CURDIR)/debian/libprotobuf-dev/usr/include/google/protobuf/compiler
