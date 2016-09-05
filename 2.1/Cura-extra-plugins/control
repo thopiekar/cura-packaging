@@ -10,6 +10,8 @@ Architecture: all
 Depends:
  cura-extra-plugin-doodle3d,
  cura-extra-plugin-postprocessing,
+Enhances:
+ cura
 Description: 3rd party plugins for Cura
  <insert long description, indented with spaces>
 
