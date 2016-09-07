@@ -26,3 +26,9 @@ Architecture: all
 Depends: ${misc:Depends}
 Description: postprocessing plugin for Cura
  .
+
+Package: cura-extra-plugin-octoprint
+Architecture: all
+Depends: ${misc:Depends}
+Description: postprocessing plugin for Cura
+ .
