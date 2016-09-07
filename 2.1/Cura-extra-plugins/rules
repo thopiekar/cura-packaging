@@ -7,8 +7,6 @@ CURA_PLUGINS = Doodle3D-cura-plugin PostProcessingPlugin OctoPrintPlugin
 
 %:
 	dh $@ --parallel
-	#dh $@ --sourcedirectory=Doodle3D-cura-plugin --builddirectory=Doodle3D-cura-plugin-build
-	#dh $@ --sourcedirectory=PostProcessingPlugin --builddirectory=PostProcessingPlugin-build
 
 
 override_dh_auto_clean:
