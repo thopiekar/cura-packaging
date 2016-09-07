@@ -3,7 +3,7 @@
 # output every command that modifies files on the build system.
 #export DH_VERBOSE = 1
 
-CURA_PLUGINS = Doodle3D-cura-plugin PostProcessingPlugin
+CURA_PLUGINS = Doodle3D-cura-plugin PostProcessingPlugin OctoPrintPlugin
 
 %:
 	dh $@ --parallel
