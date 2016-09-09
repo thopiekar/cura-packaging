@@ -8,7 +8,9 @@ Standards-Version: 3.9.6
 Package: cura-extra-plugins-all
 Architecture: all
 Depends:
+ cura,
  cura-extra-plugin-doodle3d,
+ cura-extra-plugin-octoprint,
  cura-extra-plugin-postprocessing,
 Enhances:
  cura
@@ -17,18 +19,25 @@ Description: 3rd party plugins for Cura
 
 Package: cura-extra-plugin-doodle3d
 Architecture: all
-Depends: ${misc:Depends}
+Depends:
+ cura,
+ ${misc:Depends}
 Description: 3rd party plugins for Cura
  .
 
 Package: cura-extra-plugin-postprocessing
 Architecture: all
-Depends: ${misc:Depends}
+Depends:
+ cura,
+ ${misc:Depends}
 Description: postprocessing plugin for Cura
  .
 
 Package: cura-extra-plugin-octoprint
 Architecture: all
-Depends: ${misc:Depends}
+Depends:
+ cura,
+ python3-zeroconf,
+ ${misc:Depends}
 Description: postprocessing plugin for Cura
  .
