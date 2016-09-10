@@ -9,7 +9,7 @@ Package: cura-extra-plugins-all
 Architecture: all
 Depends:
  cura,
- cura-extra-plugin-doodle3d,
+# cura-extra-plugin-doodle3d,
  cura-extra-plugin-octoprint,
  cura-extra-plugin-postprocessing,
 Enhances:
