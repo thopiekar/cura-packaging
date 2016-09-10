@@ -4,6 +4,13 @@
 * https://launchpad.net/~thopiekar/+archive/ubuntu/cura
 * https://launchpad.net/~thopiekar/+archive/ubuntu/cura-master
 
+### Recipes building packages from `[2.1]` (as known as stable):
+* https://code.launchpad.net/~thopiekar/+recipe/cura-stable-daily
+* https://code.launchpad.net/~thopiekar/+recipe/uranium-stable-daily
+* https://code.launchpad.net/~thopiekar/+recipe/cura-engine-stable-daily
+* https://code.launchpad.net/~thopiekar/+recipe/libarcus-stable-daily
+* (extra-plugins and protobuf are not updated frequently)
+
 ### Recipes building packages from `[master]`:
 * https://code.launchpad.net/~thopiekar/+recipe/cura-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/cura-extra-plugins-daily (3rd-party)
@@ -11,10 +18,3 @@
 * https://code.launchpad.net/~thopiekar/+recipe/uranium-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/libarcus-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/protobuf-daily (3rd-party)
-
-### Recipes building packages from `[2.1]` (as known as stable):
-* https://code.launchpad.net/~thopiekar/+recipe/cura-stable-daily
-* https://code.launchpad.net/~thopiekar/+recipe/uranium-stable-daily
-* https://code.launchpad.net/~thopiekar/+recipe/cura-engine-stable-daily
-* https://code.launchpad.net/~thopiekar/+recipe/libarcus-stable-daily
-* (extra-plugins and protobuf are not updated frequently)
