@@ -13,8 +13,8 @@
 * https://code.launchpad.net/~thopiekar/+recipe/protobuf-daily (3rd-party)
 
 ### Recipes building packages from `[2.1]` (as known as stable):
-* https://code.launchpad.net/~thopiekar/+recipe/cura-2.1-daily
-* https://code.launchpad.net/~thopiekar/+recipe/uranium-2.1-daily
-* https://code.launchpad.net/~thopiekar/+recipe/cura-engine-2.1-daily
-* https://code.launchpad.net/~thopiekar/+recipe/libarcus-2.1-daily
+* https://code.launchpad.net/~thopiekar/+recipe/cura-stable-daily
+* https://code.launchpad.net/~thopiekar/+recipe/uranium-stable-daily
+* https://code.launchpad.net/~thopiekar/+recipe/cura-engine-stable-daily
+* https://code.launchpad.net/~thopiekar/+recipe/libarcus-stable-daily
 * (extra-plugins and protobuf are not updated frequently)
