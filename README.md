@@ -4,7 +4,7 @@
 * https://launchpad.net/~thopiekar/+archive/ubuntu/cura
 * https://launchpad.net/~thopiekar/+archive/ubuntu/cura-master
 
-### Recipes building packages from `[2.1]` (as known as stable):
+### Recipes building packages from `[2.3]` (as known as stable):
 * https://code.launchpad.net/~thopiekar/+recipe/cura-stable-daily
 * https://code.launchpad.net/~thopiekar/+recipe/uranium-stable-daily
 * https://code.launchpad.net/~thopiekar/+recipe/cura-engine-stable-daily
