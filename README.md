@@ -6,10 +6,11 @@
 
 ### Recipes building packages from `[2.3]` (as known as `stable`):
 * https://code.launchpad.net/~thopiekar/+recipe/cura-stable-daily
+* https://code.launchpad.net/~thopiekar/+recipe/cura-extra-plugins-stable-daily (3rd-party)
 * https://code.launchpad.net/~thopiekar/+recipe/uranium-stable-daily
 * https://code.launchpad.net/~thopiekar/+recipe/cura-engine-stable-daily
 * https://code.launchpad.net/~thopiekar/+recipe/libarcus-stable-daily
-* (extra-plugins and protobuf are not updated frequently)
+* (protobuf is not updated frequently)
 
 ### Recipes building packages from `[master]`:
 * https://code.launchpad.net/~thopiekar/+recipe/cura-master-daily
