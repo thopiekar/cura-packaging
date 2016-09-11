@@ -29,6 +29,7 @@ Depends:
  qml-module-qt-labs-folderlistmodel,
  qml-module-qt-labs-settings,
 Provides:
+ cura-plugin-api-3,
  ${python3:Provides},
 XB-Python3-Version:
  ${python3:Versions},
