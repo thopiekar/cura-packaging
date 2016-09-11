@@ -29,9 +29,9 @@ Depends:
  qml-module-qt-labs-folderlistmodel,
  qml-module-qt-labs-settings,
 Provides:
- ${python3:Provides}
+ ${python3:Provides},
 XB-Python3-Version:
- ${python3:Versions}
+ ${python3:Versions},
 Description:  3D printer / slicing GUI built on top of the Uranium framework
  This is the new, shiny frontend for Cura. daid/Cura is the old legacy Cura that everyone knows and loves/hates.
  .
