@@ -33,6 +33,8 @@ Depends:
  python3-serial,
  qml-module-qtqml-models2,
  qml-module-qtquick-dialogs,
+Recommends:
+ python3-colorlog,
 Provides:
  ${python3:Provides}
 XB-Python3-Version:
