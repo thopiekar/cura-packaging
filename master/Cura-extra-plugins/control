@@ -9,7 +9,7 @@ Package: cura-extra-plugins-all
 Architecture: all
 Depends:
  cura,
- cura-extra-plugin-doodle3d,
+# cura-extra-plugin-doodle3d,
  cura-extra-plugin-octoprint,
  cura-extra-plugin-postprocessing,
 Enhances:
@@ -17,13 +17,13 @@ Enhances:
 Description: 3rd party plugins for Cura
  <insert long description, indented with spaces>
 
-Package: cura-extra-plugin-doodle3d
-Architecture: all
-Depends:
- cura,
- ${misc:Depends}
-Description: 3rd party plugins for Cura
- .
+#Package: cura-extra-plugin-doodle3d
+#Architecture: all
+#Depends:
+# cura,
+# ${misc:Depends}
+#Description: 3rd party plugins for Cura
+# .
 
 Package: cura-extra-plugin-postprocessing
 Architecture: all
