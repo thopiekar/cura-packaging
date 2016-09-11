@@ -1,5 +1,5 @@
-cura-extra-plugins (0.0.0-1) unstable; urgency=medium
+cura-extra-plugins (2.3.99-0) unstable; urgency=medium
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial packaging
 
- -- Thomas Karl Pietrowski <thopiekar@unknown>  Sun, 17 Apr 2016 13:30:46 +0200
+ -- Thomas Karl Pietrowski <thopiekar@googlemail.com>  Sun, 17 Apr 2016 13:30:46 +0200
