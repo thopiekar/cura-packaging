@@ -3,7 +3,7 @@
 # output every command that modifies files on the build system.
 export DH_VERBOSE = 1
 
-CURA_PLUGINS = PostProcessingPlugin OctoPrintPlugin
+CURA_PLUGINS = PostProcessingPlugin OctoPrintPlugin GodModePlugin
 
 %:
 	dh $@ --parallel
@@ -12,7 +12,7 @@ CURA_PLUGINS = PostProcessingPlugin OctoPrintPlugin
 override_dh_auto_clean:
 	for PLUGIN in $(CURA_PLUGINS) ; do \
 	    dh_auto_clean -O--sourcedirectory=$${PLUGIN} \
-		          -O--builddirectory=$${PLUGIN}-build; \
+		              -O--builddirectory=$${PLUGIN}-build; \
 	done
 
 override_dh_auto_configure:
