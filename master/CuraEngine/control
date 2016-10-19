@@ -2,7 +2,8 @@ Source: cura-engine
 Section: utils
 Priority: optional
 Maintainer: Thomas Karl Pietrowski <thopiekar@googlemail.com>
-Build-Depends: debhelper (>= 9), cmake, dh-python,
+Build-Depends:
+ debhelper (>= 9), cmake,
  libarcus-dev,
  protobuf-compiler, libprotobuf-dev
 Standards-Version: 3.9.6
