@@ -10,6 +10,7 @@ Standards-Version: 3.9.6
 Package: cura-extra-plugins-all
 Architecture: all
 Depends:
+ cura-extra-plugin-godmode,
 # cura-extra-plugin-doodle3d,
  cura-extra-plugin-octoprint,
  cura-extra-plugin-postprocessing,
@@ -17,6 +18,14 @@ Enhances:
  cura
 Description: 3rd party plugins for Cura
  <insert long description, indented with spaces>
+
+Package: cura-extra-plugin-godmode
+Architecture: all
+Depends:
+ cura-plugin-api-2,
+ ${misc:Depends}
+Description: 3rd party plugins for Cura
+ .
 
 #Package: cura-extra-plugin-doodle3d
 #Architecture: all
