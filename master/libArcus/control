@@ -21,6 +21,16 @@ Depends:
 Description:  Communication library between internal components for Ultimaker software 
   Communication library between internal components for Ultimaker software 
 
+Package: libarcus-dbg
+Architecture: any
+Multi-Arch: same
+Section: debug
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends}
+Description:  Communication library between internal components for Ultimaker software 
+  Communication library between internal components for Ultimaker software 
+
 Package: libarcus-dev
 Architecture: any
 Multi-Arch: same
@@ -46,3 +56,18 @@ XB-Python3-Version:
  ${python3:Versions}
 Description:  Communication library between internal components for Ultimaker software 
   Communication library between internal components for Ultimaker software 
+
+Package: python3-arcus-dbg
+Architecture: any
+Section: python
+Depends:
+ ${shlibs:Depends},
+ ${python3:Depends},
+ ${misc:Depends},
+ libarcus (= ${binary:Version})
+Provides:
+ ${python3:Provides}
+XB-Python3-Version:
+ ${python3:Versions}
+Description:  Communication library between internal components for Ultimaker software
+  Communication library between internal components for Ultimaker software
