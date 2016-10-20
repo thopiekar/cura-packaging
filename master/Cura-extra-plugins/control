@@ -27,6 +27,14 @@ Depends:
 Description: 3rd party plugins for Cura
  .
 
+#Pakage: cura-extra-plugin-um3networkprinting
+#Architecture: all
+#Depends:
+# cura-plugin-api-3,
+# ${misc:Depends}
+#Description: 3rd party plugins for Cura
+# .
+
 #Package: cura-extra-plugin-doodle3d
 #Architecture: all
 #Depends:
