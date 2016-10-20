@@ -29,6 +29,10 @@ Depends:
 # needed packages for 2.1 - don't see messages about missing modules on 2.3/master
  qml-module-qt-labs-folderlistmodel,
  qml-module-qt-labs-settings,
+Recommends:
+ cura-plugin-sliceinfo,
+ cura-plugin-ultimakermachineactions,
+ cura-plugin-x3dreader,
 Provides:
  cura-plugin-api-3,
  ${python3:Provides},
@@ -38,3 +42,47 @@ Description:  3D printer / slicing GUI built on top of the Uranium framework
  This is the new, shiny frontend for Cura. daid/Cura is the old legacy Cura that everyone knows and loves/hates.
  .
  We re-worked the whole GUI code at Ultimaker, because the old code started to become a unmaintainable.
+
+Package: cura-plugin-sliceinfo
+Architecture: all
+Depends:
+ cura,
+ ${shlibs:Depends},
+ ${misc:Depends},
+ ${python3:Depends},
+Provides:
+ ${python3:Provides},
+XB-Python3-Version:
+ ${python3:Versions},
+Description:  Cura plugin - SliceInfo
+ This is plugin is used to collect statistics of the user's usage of Cura. You can enable/disable collecting data in Cura, too.
+ .
+ NOTE: I personally recommend to install and enable this plugin. Ultimaker sets priorities by their collected stats. So if there are to less people using Cura with Linux, they simply won't work on Linux-specific issues (at least so quickly). So better keep it enabled, so Linux support will be kept alive!
+
+Package: cura-plugin-ultimakermachineactions
+Architecture: all
+Depends:
+ cura,
+ ${shlibs:Depends},
+ ${misc:Depends},
+ ${python3:Depends},
+Provides:
+ ${python3:Provides},
+XB-Python3-Version:
+ ${python3:Versions},
+Description:  Cura plugin - UltimakerMachineActions
+ This is plugin adds additional functions to preform some Ultimaker-specific actions.
+
+Package: cura-plugin-x3dreader
+Architecture: all
+Depends:
+ cura,
+ ${shlibs:Depends},
+ ${misc:Depends},
+ ${python3:Depends},
+Provides:
+ ${python3:Provides},
+XB-Python3-Version:
+ ${python3:Versions},
+Description:  Cura plugin - X3DReader
+ This is plugin is used to collect statistics of the user's usage of Cura. You can enable/disable collecting data in Cura, too.
