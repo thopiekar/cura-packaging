@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Thomas Karl Pietrowski <thopiekar@googlemail.com>
 Build-Depends:
  debhelper (>= 9), cmake,
+ python3-all-dev,
  libarcus-dev,
  protobuf-compiler, libprotobuf-dev,
 # Tests
