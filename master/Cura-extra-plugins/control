@@ -10,10 +10,11 @@ Standards-Version: 3.9.6
 Package: cura-extra-plugins-all
 Architecture: all
 Depends:
- cura-extra-plugin-godmode,
 # cura-extra-plugin-doodle3d,
+ cura-extra-plugin-godmode,
  cura-extra-plugin-octoprint,
  cura-extra-plugin-postprocessing,
+# cura-extra-plugin-um3networkprinting,
 Enhances:
  cura
 Description: 3rd party plugins for Cura
