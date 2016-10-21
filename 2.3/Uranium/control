@@ -1,14 +1,14 @@
 Source: uranium
 Section: python
 Priority: optional
-Maintainer: Thomas-Karl Pietrowski <thopiekar@unknown>
+Maintainer: Thomas Karl Pietrowski <thopiekar@googlemail.com>
 Build-Depends: debhelper (>= 9), cmake, dh-python,
  python3-all-dev, python3-pyqt5, python3-numpy,
  doxygen,
  gettext,
  python3-pytest, pylint3,
 Standards-Version: 3.9.6
-Homepage: https://ultimaker.com/en/products/cura-software
+Homepage: https://github.com/Ultimaker/Uranium
 X-Python3-Version: >= 3.4
 Vcs-Git: https://github.com/Ultimaker/Uranium.git
 Vcs-Browser: https://github.com/Ultimaker/Uranium
@@ -33,6 +33,8 @@ Depends:
  python3-serial,
  qml-module-qtqml-models2,
  qml-module-qtquick-dialogs,
+Recommends:
+ python3-colorlog,
 Provides:
  ${python3:Provides}
 XB-Python3-Version:
