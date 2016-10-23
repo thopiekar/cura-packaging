@@ -27,3 +27,6 @@
 * https://code.launchpad.net/~thopiekar/+recipe/uranium-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/libarcus-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/protobuf-daily (3rd-party)
+
+# Discussion:
+* https://ultimaker.com/en/community/21651-ubuntu-support-discussion-on-software-packages-hosted-in-my-ppa
