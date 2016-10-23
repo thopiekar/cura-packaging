@@ -2,7 +2,9 @@ Source: cura-extra-plugins
 Section: science
 Priority: optional
 Maintainer: Thomas Karl Pietrowski <thopiekar@googlemail.com>
-Build-Depends: debhelper (>=9), cmake, python3-all-dev
+Build-Depends:
+ debhelper (>=9), cmake,
+ python3-all-dev
 Standards-Version: 3.9.6
 
 Package: cura-extra-plugins-all
@@ -11,17 +13,27 @@ Depends:
 # cura-extra-plugin-doodle3d,
  cura-extra-plugin-octoprint,
  cura-extra-plugin-postprocessing,
+ cura-extra-plugin-um3networkprinting,
 Enhances:
  cura
-Description: 3rd party plugins for Cura
- <insert long description, indented with spaces>
+Description: Cura plugin meta-package
+ .
+
+Package: cura-extra-plugin-um3networkprinting
+Architecture: all
+Depends:
+ cura-plugin-api-3,
+ python3-zeroconf,
+ ${misc:Depends}
+Description: Cura plugin - UM3NetworkPrinting
+ For more info see: https://github.com/Ultimaker/UM3NetworkPrintingPlugin
 
 #Package: cura-extra-plugin-doodle3d
 #Architecture: all
 #Depends:
 # cura-plugin-api-2,
 # ${misc:Depends}
-#Description: 3rd party plugins for Cura
+#Description: Cura plugin - Doodle3D
 # .
 
 Package: cura-extra-plugin-postprocessing
@@ -29,8 +41,8 @@ Architecture: all
 Depends:
  cura-plugin-api-3,
  ${misc:Depends}
-Description: postprocessing plugin for Cura
- .
+Description: Cura plugin - PostProcessing
+ For more info see: https://github.com/nallath/PostProcessingPlugin
 
 Package: cura-extra-plugin-octoprint
 Architecture: all
@@ -38,5 +50,5 @@ Depends:
  cura-plugin-api-3,
  python3-zeroconf,
  ${misc:Depends}
-Description: postprocessing plugin for Cura
- .
+Description: Cura plugin - OctoPrint
+ For more info see: https://github.com/fieldOfView/OctoPrintPlugin
