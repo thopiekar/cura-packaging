@@ -43,6 +43,15 @@ Description:  3D printer / slicing GUI built on top of the Uranium framework
  .
  We re-worked the whole GUI code at Ultimaker, because the old code started to become a unmaintainable.
 
+Package: cura-firmware
+Architecture: all
+Depends:
+ ${misc:Depends},
+Provides:
+ cura-firmware-ultimaker
+Description:  Cura firmware files
+ These files are needed to update the firmware of your printer.
+
 Package: cura-plugin-sliceinfo
 Architecture: all
 Depends:
