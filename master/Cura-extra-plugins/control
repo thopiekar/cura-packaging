@@ -28,7 +28,7 @@ Depends:
 Description: 3rd party plugins for Cura
  .
 
-Pakage: cura-extra-plugin-um3networkprinting
+Package: cura-extra-plugin-um3networkprinting
 Architecture: all
 Depends:
  cura-plugin-api-3,
