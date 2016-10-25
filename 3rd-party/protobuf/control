@@ -39,7 +39,7 @@ Vcs-Git: git://anonscm.debian.org/collab-maint/protobuf.git
 X-Python-Version: >= 2.7
 X-Python3-Version: >= 3.2
 
-Package: libprotobuf10
+Package: libprotobuf11
 Architecture: any
 Multi-Arch: same
 Section: libs
@@ -58,7 +58,7 @@ Description: protocol buffers C++ library
  .
  This package contains the runtime library needed for C++ applications.
 
-Package: libprotobuf-lite10
+Package: libprotobuf-lite11
 Architecture: any
 Multi-Arch: same
 Section: libs
@@ -83,9 +83,9 @@ Architecture: any
 Multi-Arch: same
 Section: libdevel
 Provides:
- libprotobuf10-dev
+ libprotobuf11-dev
 Depends: ${misc:Depends}, zlib1g-dev,
- libprotobuf10 (= ${binary:Version}), libprotobuf-lite10 (= ${binary:Version})
+ libprotobuf11 (= ${binary:Version}), libprotobuf-lite11 (= ${binary:Version})
 Description: protocol buffers C++ library (development files)
  Protocol buffers are a flexible, efficient, automated mechanism for
  serializing structured data - similar to XML, but smaller, faster, and
@@ -101,7 +101,7 @@ Description: protocol buffers C++ library (development files)
  This package contains the development headers and static libraries needed for
  writing C++ applications.
 
-Package: libprotoc10
+Package: libprotoc11
 Architecture: any
 Multi-Arch: same
 Section: libs
@@ -126,9 +126,9 @@ Architecture: any
 Multi-Arch: same
 Section: libdevel
 Depends: ${misc:Depends},
- libprotoc10 (= ${binary:Version}), libprotobuf-dev (= ${binary:Version})
+ libprotoc11 (= ${binary:Version}), libprotobuf-dev (= ${binary:Version})
 Provides:
- libprotoc10-dev
+ libprotoc11-dev
 Replaces:
  libprotobuf-dev (<< 2.1.0)
 Breaks:
@@ -151,7 +151,7 @@ Description: protocol buffers compiler library (development files)
 Package: protobuf-compiler
 Architecture: any
 Multi-Arch: foreign
-Depends: ${shlibs:Depends}, ${misc:Depends}, libprotoc10 (= ${binary:Version})
+Depends: ${shlibs:Depends}, ${misc:Depends}, libprotoc11 (= ${binary:Version})
 Description: compiler for protocol buffer definition files
  Protocol buffers are a flexible, efficient, automated mechanism for
  serializing structured data - similar to XML, but smaller, faster, and
@@ -172,6 +172,10 @@ Package: python-protobuf
 Architecture: any
 Section: python
 Depends: ${shlibs:Depends}, ${python:Depends}, ${misc:Depends}
+Provides:
+ ${python:Provides}
+XB-Python3-Version:
+ ${python3:Versions}
 Description: Python bindings for protocol buffers
  Protocol buffers are a flexible, efficient, automated mechanism for
  serializing structured data - similar to XML, but smaller, faster, and
