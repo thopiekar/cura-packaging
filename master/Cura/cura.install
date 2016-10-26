@@ -31,6 +31,8 @@ usr/lib/cura/plugins/ChangeLogPlugin
 usr/lib/cura/plugins/MachineSettingsAction
 usr/bin/cura
 usr/lib/python3/dist-packages/cura
-usr/share/applications/cura.desktop
-usr/share/appdata/cura.appdata.xml
-usr/share/mime/packages/cura.xml
+usr/share/applications/
+usr/share/appdata/
+usr/share/mime/packages/
+
+fdm_materials/*.fdm_material usr/share/cura/resources/materials
