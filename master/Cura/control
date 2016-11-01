@@ -26,9 +26,6 @@ Depends:
  qml-module-qtqml-models2,
  qml-module-qtquick-controls,
  qml-module-qtquick-dialogs,
-# needed packages for 2.1 - don't see messages about missing modules on 2.3/master
- qml-module-qt-labs-folderlistmodel,
- qml-module-qt-labs-settings,
 Recommends:
  cura-plugin-sliceinfo,
  cura-plugin-ultimakermachineactions,
