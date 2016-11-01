@@ -55,7 +55,7 @@ Description:  Cura firmware files
 Package: cura-plugin-sliceinfo
 Architecture: all
 Depends:
- cura-plugin-api-3,
+ cura-plugin-api-3 (= ${binary:Version}),
  ${shlibs:Depends},
  ${misc:Depends},
  ${python3:Depends},
@@ -71,7 +71,7 @@ Description:  Cura plugin - SliceInfo
 Package: cura-plugin-ultimakermachineactions
 Architecture: all
 Depends:
- cura-plugin-api-3,
+ cura-plugin-api-3 (= ${binary:Version}),
  ${shlibs:Depends},
  ${misc:Depends},
  ${python3:Depends},
@@ -85,7 +85,7 @@ Description:  Cura plugin - UltimakerMachineActions
 Package: cura-plugin-x3dreader
 Architecture: all
 Depends:
- cura-plugin-api-3,
+ cura-plugin-api-3 (= ${binary:Version}),
  ${shlibs:Depends},
  ${misc:Depends},
  ${python3:Depends},
