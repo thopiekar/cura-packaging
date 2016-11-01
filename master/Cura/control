@@ -27,6 +27,7 @@ Depends:
  qml-module-qtquick-controls,
  qml-module-qtquick-dialogs,
 Recommends:
+ cura-firmware,
  cura-plugin-sliceinfo,
  cura-plugin-ultimakermachineactions,
  cura-plugin-x3dreader,
