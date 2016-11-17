@@ -17,7 +17,7 @@
 
 ### Recipes building packages from `[master]`:
 * https://code.launchpad.net/~thopiekar/+recipe/cura-master-daily
-* https://code.launchpad.net/~thopiekar/+recipe/cura-extra-plugins-daily (3rd-party)
+* https://code.launchpad.net/~thopiekar/+recipe/cura-extra-plugins-master-daily (3rd-party)
   * PostProcessingPlugin
   * OctoPrintPlugin
   * GodModePlugin
