@@ -1,5 +1,6 @@
 usr/share/cura/resources/quality
 usr/share/cura/resources/qml
+usr/share/cura/resources/materials
 usr/share/cura/resources/meshes
 usr/share/cura/resources/i18n
 usr/share/cura/resources/variants
@@ -33,5 +34,3 @@ usr/lib/python3/dist-packages/cura
 usr/share/applications/
 usr/share/appdata/
 usr/share/mime/packages/
-
-fdm_materials/*.fdm_material usr/share/cura/resources/materials
