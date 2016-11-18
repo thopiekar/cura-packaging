@@ -3,8 +3,6 @@
 # output every command that modifies files on the build system.
 export DH_VERBOSE = 1
 
-DEB_PACKAGE_VERSION ?= $(shell dpkg-parsechangelog -SVersion | cut -f2 -d":" | cut -f1 -d"~")
-
 %:
 	dh $@ --with python3 --buildsystem=cmake --parallel
 
@@ -19,7 +17,7 @@ override_dh_auto_configure:
 	dh_auto_configure -- \
 	-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH) \
 	-DURANIUM_SCRIPTS_DIR=/usr/share/uranium/scripts/ \
-	-DCURA_VERSION=$(DEB_PACKAGE_VERSION) \
+	-DCURA_VERSION=2.3.1 \
 	-DCURA_BUILDTYPE=PPA
 
 override_dh_installmime:
