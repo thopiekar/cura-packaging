@@ -1,0 +1,34 @@
+Source: cura-binary-data
+Section: science
+Priority: optional
+Maintainer: Thomas Karl Pietrowski <thopiekar@googlemail.com>
+Build-Depends:
+ debhelper (>= 9), cmake,
+Standards-Version: 3.9.6
+Homepage: https://github.com/Ultimaker/fdm_materials
+Vcs-Git: https://github.com/Ultimaker/fdm_materials.git
+Vcs-Browser: https://github.com/Ultimaker/fdm_materials
+
+Package: cura-resources-firmware
+Architecture: all
+Depends:
+ ${misc:Depends},
+Provides:
+ fdm-materials,
+ cura-resources-materials-generic,
+ cura-resources-materials-ultimaker,
+Description:  Cura material files
+ These files are needed to work with printers like UM2+ and UM3.
+
+## Already built in "cura"
+#Package: cura-resources-i18n
+#Architecture: all
+#Depends:
+# ${misc:Depends},
+#Provides:
+# fdm-materials,
+# cura-resources-materials-generic,
+# cura-resources-materials-ultimaker,
+#Description:  Cura material files
+# These files are needed to work with printers like UM2+ and UM3.
+
