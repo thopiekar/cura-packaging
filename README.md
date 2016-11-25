@@ -17,13 +17,14 @@
 
 ### Recipes building packages from `[master]`:
 * https://code.launchpad.net/~thopiekar/+recipe/cura-master-daily
+* https://code.launchpad.net/~thopiekar/+recipe/cura-binary-data-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/cura-extra-plugins-master-daily (3rd-party)
   * PostProcessingPlugin
   * OctoPrintPlugin
   * GodModePlugin
-  * UM3NetworkPrintingPlugin
   * OrientationPlugin
 * https://code.launchpad.net/~thopiekar/+recipe/cura-engine-master-daily
+* https://code.launchpad.net/~thopiekar/+recipe/fdm-materials-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/uranium-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/libarcus-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/protobuf-daily (3rd-party)
