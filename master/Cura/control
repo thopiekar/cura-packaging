@@ -22,14 +22,16 @@ Depends:
  ${misc:Depends},
  ${python3:Depends},
  cura-engine,
+ cura-resources-materials,
  python3-uranium,
  qml-module-qtqml-models2,
  qml-module-qtquick-controls,
  qml-module-qtquick-dialogs,
 Recommends:
- cura-firmware,
+ cura-resources-firmware,
  cura-plugin-sliceinfo,
  cura-plugin-ultimakermachineactions,
+ cura-plugin-um3networkprinting,
  cura-plugin-x3dreader,
 Provides:
  cura-plugin-api-3,
@@ -40,15 +42,6 @@ Description:  3D printer / slicing GUI built on top of the Uranium framework
  This is the new, shiny frontend for Cura. daid/Cura is the old legacy Cura that everyone knows and loves/hates.
  .
  We re-worked the whole GUI code at Ultimaker, because the old code started to become a unmaintainable.
-
-Package: cura-firmware
-Architecture: all
-Depends:
- ${misc:Depends},
-Provides:
- cura-firmware-ultimaker
-Description:  Cura firmware files
- These files are needed to update the firmware of your printer.
 
 Package: cura-plugin-sliceinfo
 Architecture: all
@@ -75,6 +68,23 @@ Depends:
  ${python3:Depends},
 Provides:
  ${python3:Provides},
+XB-Python3-Version:
+ ${python3:Versions},
+Description:  Cura plugin - UltimakerMachineActions
+ This is plugin adds additional functions to preform some Ultimaker-specific actions.
+
+Package: cura-plugin-um3networkprinting
+Architecture: all
+Depends:
+ cura-plugin-api-3,
+ ${shlibs:Depends},
+ ${misc:Depends},
+ ${python3:Depends},
+Provides:
+ ${python3:Provides},
+ cura-extra-plugin-um3networkprinting,
+Replaces:
+ cura-extra-plugin-um3networkprinting,
 XB-Python3-Version:
  ${python3:Versions},
 Description:  Cura plugin - UltimakerMachineActions
