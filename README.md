@@ -22,7 +22,6 @@
   * PostProcessingPlugin
   * OctoPrintPlugin
   * GodModePlugin
-  * UM3NetworkPrintingPlugin
   * OrientationPlugin
 * https://code.launchpad.net/~thopiekar/+recipe/cura-engine-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/fdm-materials-master-daily
