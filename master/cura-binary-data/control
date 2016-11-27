@@ -13,8 +13,12 @@ Package: cura-resources-firmware
 Architecture: all
 Depends:
  ${misc:Depends},
+Replaces:
+ cura-firmware,
+Conflicts:
+ cura-firmware,
 Provides:
- fdm-materials,
+ cura-firmware,
  cura-resources-materials-generic,
  cura-resources-materials-ultimaker,
 Description:  Cura material files
