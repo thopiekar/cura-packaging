@@ -83,6 +83,8 @@ Depends:
 Provides:
  ${python3:Provides},
  cura-extra-plugin-um3networkprinting,
+Conflicts:
+ cura-extra-plugin-um3networkprinting,
 Replaces:
  cura-extra-plugin-um3networkprinting,
 XB-Python3-Version:
