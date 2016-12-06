@@ -22,10 +22,11 @@
 * https://code.launchpad.net/~thopiekar/+recipe/cura-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/cura-binary-data-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/cura-extra-plugins-master-daily (3rd-party)
-  * PostProcessingPlugin
-  * OctoPrintPlugin
+  * DBusInterface
   * GodModePlugin
+  * OctoPrintPlugin
   * OrientationPlugin
+  * PostProcessingPlugin
 * https://code.launchpad.net/~thopiekar/+recipe/cura-engine-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/fdm-materials-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/uranium-master-daily
