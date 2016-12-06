@@ -25,20 +25,24 @@ Depends:
  ${python3:Depends},
  ${misc:Depends},
  uranium-plugins,
- uranium-tools,
  python3-arcus,
+# 3rd party Python modules
  python3-numpy,
  python3-scipy,
- python3-protobuf,
+# PyQt5
  python3-pyqt5,
  python3-pyqt5.qtopengl,
  python3-pyqt5.qtquick,
  python3-pyqt5.qtsvg,
  python3-serial,
+# QML
  qml-module-qtqml-models2,
  qml-module-qtquick-dialogs,
 Recommends:
+# For colored console output
  python3-colorlog,
+# For numpy to calculate faster
+ libopenblas-base,
 Provides:
  ${python3:Provides}
 XB-Python3-Version:
