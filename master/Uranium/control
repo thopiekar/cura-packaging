@@ -39,7 +39,7 @@ Depends:
  qml-module-qtqml-models2,
  qml-module-qtquick-dialogs,
 Recommends:
-# For colored console output
+# For coloured console output
  python3-colorlog,
 # For numpy to calculate faster
  libopenblas-base,
