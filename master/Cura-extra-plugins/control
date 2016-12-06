@@ -10,13 +10,24 @@ Standards-Version: 3.9.6
 Package: cura-extra-plugins-all
 Architecture: all
 Depends:
-# cura-extra-plugin-doodle3d,
-# Not recommended for end-users
-# cura-extra-plugin-godmode,
  cura-extra-plugin-octoprint,
  cura-extra-plugin-orientation,
  cura-extra-plugin-postprocessing,
  cura-extra-plugin-um3networkprinting,
+# Incompatible API:
+# cura-extra-plugin-doodle3d,
+Provides:
+ cura-extra-plugins
+Enhances:
+ cura
+Description: Cura plugin meta-package
+ .
+
+Package: cura-extra-plugins-all-dev
+Architecture: all
+Depends:
+ cura-extra-plugin-godmode,
+ cura-extra-plugin-dbusinterface,
 Provides:
  cura-extra-plugins
 Enhances:
@@ -29,10 +40,16 @@ Architecture: all
 Depends:
  cura-plugin-api-3,
  ${misc:Depends}
-Provides:
- cura-extra-plugins-dev
 Description: Cura plugin - GodMode
  For more info see: https://github.com/sedwards2009/cura-god-mode-plugin
+
+Package: cura-extra-plugin-dbusinterface
+Architecture: all
+Depends:
+ cura-plugin-api-3,
+ ${misc:Depends}
+Description: Cura plugin - DBusInterface
+ For more info see: https://github.com/awhiemstra/cura-dbusinterface
 
 Package: cura-extra-plugin-um3networkprinting
 Architecture: all
