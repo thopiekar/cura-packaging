@@ -26,7 +26,6 @@ Package: cura-extra-plugins-all-dev
 Architecture: all
 Depends:
  cura-extra-plugin-godmode,
- cura-extra-plugin-dbusinterface,
 Provides:
  cura-extra-plugins
 Enhances:
@@ -41,14 +40,6 @@ Depends:
  ${misc:Depends}
 Description: Cura plugin - GodMode
  For more info see: https://github.com/sedwards2009/cura-god-mode-plugin
-
-Package: cura-extra-plugin-dbusinterface
-Architecture: all
-Depends:
- cura-plugin-api-3,
- ${misc:Depends}
-Description: Cura plugin - DBusInterface
- For more info see: https://github.com/awhiemstra/cura-dbusinterface
 
 Package: cura-extra-plugin-doodle3d
 Architecture: all
