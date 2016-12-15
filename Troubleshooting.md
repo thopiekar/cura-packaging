@@ -25,3 +25,11 @@ For more info on using Synaptic search the web for manuals. There are enough aro
 An easy method for advanced users is to change the PPAs priority using APT pinning.
 While choosing a low "Pin-Priority" you can even tell APT to avoid a repository, if needed.
 Using a low here will tell APT to downgrade to the Ubuntu packages whenever possible.
+
+## Can't find feature ... that's usually included in Cura
+You probably need to install the specific plugin, you can also add all the plugins by installing `cura-extra-plugins-all`.
+You can get a list of available plugins (and all packages) using the Synaptic Package Manager, by viewing 
+the `LP-PPA-thopiekar-cura/...`  origin. 
+
+## Ultimaker 3 Connect button is missing
+You probably need to add the plugin for UM3 network printing. You can install `cura-extra-plugin-um3networkprinting` or all the plugins by installing `cura-extra-plugins-all`.

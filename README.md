@@ -13,13 +13,15 @@ There is also a issue report for different problems at [#1094](https://github.co
 
 ### Recipes building packages from `[2.3]` (as known as `stable`):
 * https://code.launchpad.net/~thopiekar/+recipe/cura-stable-daily
+* https://code.launchpad.net/~thopiekar/+recipe/cura-binary-data-stable-daily
 * https://code.launchpad.net/~thopiekar/+recipe/cura-extra-plugins-stable-daily (3rd-party)
   * PostProcessingPlugin
   * OctoPrintPlugin
   * UM3NetworkPrintingPlugin
-* https://code.launchpad.net/~thopiekar/+recipe/uranium-stable-daily
 * https://code.launchpad.net/~thopiekar/+recipe/cura-engine-stable-daily
+* https://code.launchpad.net/~thopiekar/+recipe/fdm-materials-stable-daily
 * https://code.launchpad.net/~thopiekar/+recipe/libarcus-stable-daily
+* https://code.launchpad.net/~thopiekar/+recipe/uranium-stable-daily
 * (protobuf is not updated frequently)
 
 ### Recipes building packages from `[master]`:
@@ -33,6 +35,6 @@ There is also a issue report for different problems at [#1094](https://github.co
   * PostProcessingPlugin
 * https://code.launchpad.net/~thopiekar/+recipe/cura-engine-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/fdm-materials-master-daily
-* https://code.launchpad.net/~thopiekar/+recipe/uranium-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/libarcus-master-daily
+* https://code.launchpad.net/~thopiekar/+recipe/uranium-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/protobuf-daily (3rd-party)
