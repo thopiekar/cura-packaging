@@ -4,6 +4,9 @@
 * https://launchpad.net/~thopiekar/+archive/ubuntu/cura
 * https://launchpad.net/~thopiekar/+archive/ubuntu/cura-master
 
+## Any problems with your installation?
+Take a look at [Troubleshooting](Troubleshooting.md) first. If you are sure that your problems are 100%ly related to the packages and not to Cura itself, report your problems here. When reporting problems at [Cura](https://github.com/Ultimaker/Cura), do not forget to mention me in your issue report by `@thopiekar`, so I get notified.
+
 ## Discussion:
 * https://ultimaker.com/en/community/21651-ubuntu-support-discussion-on-software-packages-hosted-in-my-ppa
 
