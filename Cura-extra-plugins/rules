@@ -3,7 +3,7 @@
 # output every command that modifies files on the build system.
 export DH_VERBOSE = 1
 
-CURA_PLUGINS = PostProcessingPlugin OctoPrintPlugin GodModePlugin OrientationPlugin Doodle3DPlugin
+CURA_PLUGINS = PostProcessingPlugin OctoPrintPlugin GodModePlugin OrientationPlugin Doodle3DPlugin DBusInterfacePlugin
 
 %:
 	dh $@ --parallel
