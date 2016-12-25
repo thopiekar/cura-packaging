@@ -91,6 +91,7 @@ Depends:
  ${shlibs:Depends},
  ${misc:Depends},
  ${python3:Depends},
+ python3-zeroconf,
 Provides:
  ${python3:Provides},
  cura-extra-plugin-um3networkprinting,
