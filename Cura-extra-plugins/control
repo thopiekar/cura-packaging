@@ -7,12 +7,13 @@ Build-Depends:
  python3-all-dev
 Standards-Version: 3.9.6
 
-Package: cura-extra-plugins-all
+Package: cura-plugins-all-extra
+Provides: cura-extra-plugins-all
 Architecture: all
 Depends:
- cura-extra-plugin-octoprint,
- cura-extra-plugin-orientation,
- cura-extra-plugin-postprocessing,
+ cura-plugin-octoprint,
+ cura-plugin-orientation,
+ cura-plugin-postprocessing,
 # Incompatible API:
 # cura-extra-plugin-doodle3d,
 Provides:
@@ -22,11 +23,12 @@ Enhances:
 Description: Cura plugin meta-package
  .
 
-Package: cura-extra-plugins-all-dev
+Package: cura-plugins-all-extra-dev
+Provides: cura-extra-plugins-all-dev
 Architecture: all
 Depends:
- cura-extra-plugin-godmode,
- cura-extra-plugin-dbusinterface,
+ cura-plugin-godmode,
+ cura-plugin-dbusinterface,
 Provides:
  cura-extra-plugins
 Enhances:
@@ -34,7 +36,8 @@ Enhances:
 Description: Cura plugin meta-package
  .
 
-Package: cura-extra-plugin-godmode
+Package: cura-plugin-godmode
+Provides: cura-extra-plugin-godmode
 Architecture: all
 Depends:
  cura-plugin-api-3,
@@ -42,7 +45,8 @@ Depends:
 Description: Cura plugin - GodMode
  For more info see: https://github.com/sedwards2009/cura-god-mode-plugin
 
-Package: cura-extra-plugin-dbusinterface
+Package: cura-plugin-dbusinterface
+Provides: cura-extra-plugin-dbusinterface
 Architecture: all
 Depends:
  cura-plugin-api-3,
@@ -50,7 +54,8 @@ Depends:
 Description: Cura plugin - DBusInterface
  For more info see: https://github.com/awhiemstra/cura-dbusinterface
 
-Package: cura-extra-plugin-doodle3d
+Package: cura-plugin-doodle3d
+Provides: cura-extra-plugin-doodle3d
 Architecture: all
 Depends:
  cura-plugin-api-2,
@@ -58,7 +63,8 @@ Depends:
 Description: Cura plugin - Doodle3D
  .
 
-Package: cura-extra-plugin-postprocessing
+Package: cura-plugin-postprocessing
+Provides: cura-extra-plugin-postprocessing
 Architecture: all
 Depends:
  cura-plugin-api-3,
@@ -66,7 +72,8 @@ Depends:
 Description: Cura plugin - PostProcessing
  For more info see: https://github.com/nallath/PostProcessingPlugin
 
-Package: cura-extra-plugin-octoprint
+Package: cura-plugin-octoprint
+Provides: cura-extra-plugin-octoprint
 Architecture: all
 Depends:
  cura-plugin-api-3,
@@ -75,7 +82,8 @@ Depends:
 Description: Cura plugin - OctoPrint
  For more info see: https://github.com/fieldOfView/OctoPrintPlugin
 
-Package: cura-extra-plugin-orientation
+Package: cura-plugin-orientation
+Provides: cura-extra-plugin-orientation
 Architecture: all
 Depends:
  cura-plugin-api-3,
