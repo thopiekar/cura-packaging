@@ -27,6 +27,8 @@ Depends:
  qml-module-qtqml-models2,
  qml-module-qtquick-controls,
  qml-module-qtquick-dialogs,
+ qml-module-qt-labs-settings,
+ qml-module-qt-labs-folderlistmodel,
 Recommends:
  cura-resources-firmware,
  cura-plugins-all,
