@@ -6,9 +6,9 @@ Build-Depends: debhelper (>= 9), cmake,
  python3-all-dev, python3-all-dbg,
  python3-sip-dev, python3-sip-dbg,
  protobuf-compiler, libprotobuf-dev (>= 3.0.0), libprotoc-dev,
-Standards-Version: 3.9.6
-Homepage: https://github.com/Ultimaker/libArcus
+Standards-Version: 3.9.8
 X-Python3-Version: >= 3.4
+Homepage: https://github.com/Ultimaker/libArcus
 Vcs-Git: https://github.com/Ultimaker/libArcus.git
 Vcs-Browser: https://github.com/Ultimaker/libArcus
 
@@ -28,7 +28,7 @@ Multi-Arch: same
 Section: debug
 Depends:
  ${shlibs:Depends},
- ${misc:Depends}
+ ${misc:Depends},
 Description:  Communication library between internal components for Ultimaker software 
   Communication library between internal components for Ultimaker software 
 
@@ -65,7 +65,7 @@ Depends:
  ${shlibs:Depends},
  ${python3:Depends},
  ${misc:Depends},
- libarcus (= ${binary:Version})
+ libarcus-dbg (= ${binary:Version})
 Provides:
  ${python3:Provides}
 XB-Python3-Version:
