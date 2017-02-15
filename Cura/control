@@ -46,6 +46,7 @@ Package: cura-plugins-all
 Architecture: all
 Depends:
  cura-plugin-gcodereader,
+ cura-plugin-pausebackend,
  cura-plugin-sliceinfo,
  cura-plugin-ultimakermachineactions,
  cura-plugin-um3networkprinting,
@@ -70,6 +71,20 @@ XB-Python3-Version:
  ${python3:Versions},
 Description:  Cura plugin - GCodeReader
  This is plugin is used to open G-Code files in Cura.
+
+Package: cura-plugin-pausebackend
+Architecture: all
+Depends:
+ cura-plugin-api-3,
+ ${shlibs:Depends},
+ ${misc:Depends},
+ ${python3:Depends},
+Provides:
+ ${python3:Provides},
+XB-Python3-Version:
+ ${python3:Versions},
+Description:  Cura plugin - PauseBackend
+ This is plugin is used to pause the slicing backend in Cura.
 
 Package: cura-plugin-sliceinfo
 Architecture: all
