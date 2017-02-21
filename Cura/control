@@ -133,8 +133,8 @@ Replaces:
  cura-extra-plugin-um3networkprinting,
 XB-Python3-Version:
  ${python3:Versions},
-Description:  Cura plugin - UltimakerMachineActions
- This is plugin adds additional functions to preform some Ultimaker-specific actions.
+Description:  Cura plugin - UM3NetworkPrinting
+ This is plugin adds additional functions to be able to print with an UM3 over the network.
 
 Package: cura-plugin-x3dreader
 Architecture: all
