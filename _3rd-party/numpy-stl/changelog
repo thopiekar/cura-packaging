@@ -1,5 +1,5 @@
-numpy-stl (0.0.1-1) unstable; urgency=medium
+numpy-stl (2.2.0-1) unstable; urgency=medium
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release
 
  -- Thomas Karl Pietrowski <thopiekar@unknown>  Sat, 29 Apr 2017 11:45:20 +0200
