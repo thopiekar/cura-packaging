@@ -1,5 +1,5 @@
 Source: cura
-Section: science
+Section: graphics
 Priority: optional
 Maintainer: Thomas Karl Pietrowski <thopiekar@googlemail.com>
 Build-Depends:
