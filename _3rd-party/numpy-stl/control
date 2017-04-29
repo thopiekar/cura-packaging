@@ -3,8 +3,10 @@ Section: python
 Priority: optional
 Maintainer: Thomas Karl Pietrowski <thopiekar@googlemail.com>
 Build-Depends: debhelper (>= 9), dh-python,
- python-all-dev,
- python3-all-dev,
+# Python development files
+ python-all-dev, python3-all-dev,
+# Python setuptools
+ python-setuptools, python3-setuptools,
 Standards-Version: 3.9.8
 X-Python-Version: >= 2.7
 X-Python3-Version: >= 3.4
