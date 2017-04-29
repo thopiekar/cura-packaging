@@ -16,6 +16,12 @@ Depends:
 Provides:
  fdm-materials,
  cura-resources-materials-generic,
+ cura-resources-materials-chromatik,
+ cura-resources-materials-fiberlogy,
+ cura-resources-materials-filo3d,
+ cura-resources-materials-imade3d,
+ cura-resources-materials-octofiber,
+ cura-resources-materials-polymaker,
  cura-resources-materials-ultimaker,
 Conflicts:
  cura (<< 2.4),
