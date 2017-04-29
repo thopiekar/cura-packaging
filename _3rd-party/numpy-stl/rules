@@ -3,6 +3,8 @@
 # output every command that modifies files on the build system.
 export DH_VERBOSE = 1
 
+export PYBUILD_CLEAN_ARGS=--no-pytest-runner
+
 %:
 	dh $@ --with python2 \
 	      --with python3 \
