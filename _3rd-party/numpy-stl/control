@@ -1,0 +1,37 @@
+Source: numpy-stl
+Section: python
+Priority: optional
+Maintainer: Thomas Karl Pietrowski <thopiekar@googlemail.com>
+Build-Depends: debhelper (>= 9), dh-python,
+ python-all-dev,
+ python3-all-dev,
+Standards-Version: 3.9.8
+X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.4
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: https://anonscm.debian.org/collab-maint/numpy-stl.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/numpy-stl.git
+
+Package: numpy-stl
+Architecture: all
+Depends:
+ python-numpy-stl,
+ python3-numpy-stl,
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: python-numpy-stl
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${python:Depends},
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: python3-numpy-stl
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
