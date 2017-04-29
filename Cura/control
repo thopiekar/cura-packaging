@@ -7,7 +7,7 @@ Build-Depends:
  python3-dev,
  python3-uranium, uranium-tools,
  qttools5-dev, qttools5-dev-tools,
- gettext,
+ gettext, python3-savitar,
  python3-pytest, pylint3,
 Standards-Version: 3.9.6
 Homepage: https://github.com/Ultimaker/Cura
