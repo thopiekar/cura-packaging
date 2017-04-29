@@ -7,6 +7,12 @@ Build-Depends: debhelper (>= 9), dh-python,
  python-all-dev, python3-all-dev,
 # Python setuptools
  python-setuptools, python3-setuptools,
+# Cython*
+ cython, cython3,
+# Numpy*
+ python-numpy, python3-numpy,
+# PyTest
+ python-pytest, python3-pytest,
 Standards-Version: 3.9.8
 X-Python-Version: >= 2.7
 X-Python3-Version: >= 3.4
