@@ -21,7 +21,6 @@ usr/lib/cura/plugins/VersionUpgrade
 usr/lib/cura/plugins/3MFReader
 usr/lib/cura/plugins/3MFWriter
 usr/lib/cura/plugins/CuraEngineBackend
-usr/lib/cura/plugins/USBPrinting
 usr/lib/cura/plugins/PerObjectSettingsTool
 usr/lib/cura/plugins/PluginBrowser
 usr/lib/cura/plugins/AutoSave

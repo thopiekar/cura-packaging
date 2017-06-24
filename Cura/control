@@ -51,6 +51,7 @@ Depends:
  cura-plugin-sliceinfo,
  cura-plugin-ultimakermachineactions,
  cura-plugin-um3networkprinting,
+ cura-plugin-usbprinting,
  cura-plugin-x3dreader,
 Provides:
  cura-plugins
@@ -122,6 +123,18 @@ XB-Python3-Version:
  ${python3:Versions},
 Description:  Cura plugin - UM3NetworkPrinting
  This is plugin adds additional functions to be able to print with an UM3 over the network.
+
+Package: cura-plugin-usbprinting
+Architecture: all
+Depends:
+ cura-plugin-api-3,
+ ${shlibs:Depends},
+ ${misc:Depends},
+ ${python3:Depends},
+XB-Python3-Version:
+ ${python3:Versions},
+Description:  Cura plugin - USBPrinting
+ This is plugin adds additional functions to be able to print via USB.
 
 Package: cura-plugin-x3dreader
 Architecture: all
