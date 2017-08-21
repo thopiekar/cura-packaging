@@ -16,7 +16,7 @@ override_dh_auto_configure:
 override_dh_install:
 	dh_install --fail-missing
 
-ifneq ($(DEB_ARCH),i386)
+ifeq ($(DEB_ARCH),i386)
 override_dh_auto_test:
         @echo "Ignoring tests on $(DEB_ARCH)"
 	dh_auto_test || true
