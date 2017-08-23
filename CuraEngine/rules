@@ -18,6 +18,6 @@ override_dh_install:
 
 ifeq ($(DEB_ARCH),i386)
 override_dh_auto_test:
-        @echo "Ignoring tests on $(DEB_ARCH)"
+	@echo "Ignoring tests on $(DEB_ARCH)"
 	dh_auto_test || true
 endif
