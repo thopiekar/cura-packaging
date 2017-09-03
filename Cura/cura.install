@@ -31,6 +31,7 @@ usr/lib/cura/plugins/ChangeLogPlugin
 usr/lib/cura/plugins/MachineSettingsAction
 usr/bin/cura
 usr/lib/python3/dist-packages/cura
-usr/share/applications/
 usr/share/appdata/
+usr/share/applications/
+usr/share/icons/hicolor/128x128/apps
 usr/share/mime/packages/
