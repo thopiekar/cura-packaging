@@ -25,3 +25,6 @@ override_dh_auto_configure:
 override_dh_installmime:
 	cp -fv cura.sharedmimeinfo debian/cura.sharedmimeinfo
 	dh_installmime -O--buildsystem=cmake -O--parallel
+
+override_dh_auto_test:
+		dh_auto_test || true
