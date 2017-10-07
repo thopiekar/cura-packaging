@@ -14,3 +14,6 @@ override_dh_auto_install:
 # https://github.com/Ultimaker/cura-binary-data/pull/4
 #override_dh_install:
 #	dh_install --fail-missing
+
+override_dh_auto_test:
+		dh_auto_test || true
