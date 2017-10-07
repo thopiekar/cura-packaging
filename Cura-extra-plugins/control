@@ -16,8 +16,6 @@ Depends:
  cura-plugin-octoprint,
  cura-plugin-orientation,
  cura-plugin-postprocessing,
-# Incompatible API:
-# cura-extra-plugin-doodle3d,
 Enhances:
  cura
 Description: Cura plugin meta-package
@@ -55,16 +53,6 @@ Depends:
  ${misc:Depends}
 Description: Cura plugin - DBusInterface
  For more info see: https://github.com/awhiemstra/cura-dbusinterface
-
-Package: cura-plugin-doodle3d
-Provides:
- cura-extra-plugin-doodle3d,
-Architecture: all
-Depends:
- cura-plugin-api-2,
- ${misc:Depends}
-Description: Cura plugin - Doodle3D
- .
 
 Package: cura-plugin-postprocessing
 Provides:
