@@ -6,12 +6,12 @@ usr/share/cura/resources/variants
 usr/share/cura/resources/extruders
 usr/share/cura/resources/shaders
 usr/share/cura/resources/themes
-usr/share/cura/resources/themes/cura
 usr/share/cura/resources/images
 usr/share/cura/resources/definitions
 usr/lib/cura/plugins/XRayView
 usr/lib/cura/plugins/SolidView
 usr/lib/cura/plugins/LegacyProfileReader
+usr/lib/cura/plugins/FirmwareUpdateChecker
 usr/lib/cura/plugins/GCodeWriter
 usr/lib/cura/plugins/CuraProfileReader
 usr/lib/cura/plugins/XmlMaterialProfile
