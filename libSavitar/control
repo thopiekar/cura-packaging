@@ -7,9 +7,9 @@ Build-Depends: debhelper (>= 9), cmake,
  python3-sip-dev, python3-sip-dbg,
 Standards-Version: 3.9.8
 X-Python3-Version: >= 3.4
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://anonscm.debian.org/collab-maint/libsavitar.git
-#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/libsavitar.git
+Homepage: https://github.com/Ultimaker/libSavitar
+Vcs-Git: https://github.com/Ultimaker/libSavitar.git
+Vcs-Browser: https://github.com/Ultimaker/libSavitar
 
 Package: libsavitar
 Architecture: any
@@ -18,8 +18,8 @@ Section: libs
 Depends:
  ${shlibs:Depends},
  ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: libSavitar libraries
+ libSavitar is a c++ implementation of 3mf loading with SIP python bindings
 
 Package: libsavitar-dbg
 Architecture: any
@@ -28,8 +28,8 @@ Section: debug
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: libSavitar debug symbols
+ libSavitar is a c++ implementation of 3mf loading with SIP python bindings
 
 Package: libsavitar-dev
 Architecture: any
@@ -39,8 +39,8 @@ Depends:
  ${shlibs:Depends},
  ${misc:Depends},
  libsavitar (= ${binary:Version}), 
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: libSavitar development files
+ libSavitar is a c++ implementation of 3mf loading with SIP python bindings
 
 Package: python3-savitar
 Architecture: any
@@ -54,8 +54,8 @@ Provides:
  ${python3:Provides}
 XB-Python3-Version:
  ${python3:Versions}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Python3 bindings for libSavitar
+ libSavitar is a c++ implementation of 3mf loading with SIP python bindings
 
 Package: python3-savitar-dbg
 Architecture: any
@@ -69,5 +69,5 @@ Provides:
  ${python3:Provides}
 XB-Python3-Version:
  ${python3:Versions}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Python3 bindings for libSavitar - debug symbols
+ libSavitar is a c++ implementation of 3mf loading with SIP python bindings
