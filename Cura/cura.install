@@ -26,7 +26,6 @@ usr/lib/cura/plugins/PerObjectSettingsTool
 usr/lib/cura/plugins/PluginBrowser
 usr/lib/cura/plugins/AutoSave
 usr/lib/cura/plugins/RemovableDriveOutputDevice
-usr/lib/cura/plugins/LayerView
 usr/lib/cura/plugins/CuraProfileWriter
 usr/lib/cura/plugins/ChangeLogPlugin
 usr/lib/cura/plugins/MachineSettingsAction
