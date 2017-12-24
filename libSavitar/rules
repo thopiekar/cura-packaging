@@ -69,7 +69,7 @@ override_dh_install:
 	dh_install -a --remaining-packages --fail-missing
 
 override_dh_strip:
-	dh_strip -plibarcus --dbg-package=libsavitar-dbg
+	dh_strip -plibsavitar --dbg-package=libsavitar-dbg
 	dh_strip -ppython3-arcus --dbg-package=python3-savitar-dbg
 
 override_dh_auto_test:
