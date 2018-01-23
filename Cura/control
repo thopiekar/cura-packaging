@@ -90,6 +90,16 @@ Description:  Cura plugin - SliceInfo
  .
  NOTE: I personally recommend to install and enable this plugin. Ultimaker sets priorities by their collected stats. So if there are to less people using Cura with Linux, they simply won't work on Linux-specific issues (at least so quickly). So better keep it enabled, so Linux support will be kept alive!
 
+Package: cura-plugin-postprocessing
+Provides:
+ cura-extra-plugin-postprocessing,
+Architecture: all
+Depends:
+ cura-plugin-api-3,
+ ${misc:Depends}
+Description: Cura plugin - PostProcessing
+ For more info see: https://github.com/nallath/PostProcessingPlugin
+
 Package: cura-plugin-ultimakermachineactions
 Architecture: all
 Depends:
