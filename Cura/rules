@@ -10,12 +10,14 @@ DEB_PACKAGE_VERSION ?= $(shell dpkg-parsechangelog -SVersion | cut -f2 -d":" | c
 
 override_dh_clean:
 	rm -fv debian/cura.sharedmimeinfo
+	patch --dry-run -Rf -i debian/patches/02-exclude-fonts.patch && patch -R -i debian/patches/02-exclude-fonts.patch || true
 	dh_clean -O--buildsystem=cmake -O--parallel
 
 override_dh_install:
 	dh_install --fail-missing
 
 override_dh_auto_configure:
+	patch -f -i debian/patches/02-exclude-fonts.patch
 	dh_auto_configure -- \
 	                  -DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH) \
 	                  -DURANIUM_SCRIPTS_DIR=/usr/share/uranium/scripts/ \
@@ -27,4 +29,4 @@ override_dh_installmime:
 	dh_installmime -O--buildsystem=cmake -O--parallel
 
 override_dh_auto_test:
-		dh_auto_test || true
+	dh_auto_test || true
