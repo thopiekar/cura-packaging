@@ -44,7 +44,7 @@ Section: libdevel
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
- libsavitar (= ${binary:Version}), 
+ libsavitar0 (= ${binary:Version}), 
 Description: libSavitar development files
  libSavitar is a c++ implementation of 3mf loading with SIP python bindings
 
