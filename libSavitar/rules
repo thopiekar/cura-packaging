@@ -70,7 +70,7 @@ override_dh_install:
 
 override_dh_strip:
 	dh_strip -plibsavitar0 --dbg-package=libsavitar-dbg
-	dh_strip -ppython3-arcus --dbg-package=python3-savitar-dbg
+	dh_strip -ppython3-savitar --dbg-package=python3-savitar-dbg
 
 override_dh_auto_test:
 		dh_auto_test || true
