@@ -17,7 +17,7 @@ Multi-Arch: same
 Section: libs
 Depends:
  ${shlibs:Depends},
- ${misc:Depends}
+ ${misc:Depends},
 Provides:
  libsavitar,
 Conflicts:
