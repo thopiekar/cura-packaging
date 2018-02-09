@@ -45,7 +45,7 @@ Section: libdevel
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
- libarcus (= ${binary:Version}), 
+ libarcus3 (= ${binary:Version}), 
 Description:  Communication library between internal components for Ultimaker software 
   Communication library between internal components for Ultimaker software 
 
