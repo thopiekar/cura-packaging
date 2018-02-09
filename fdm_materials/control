@@ -25,10 +25,9 @@ Provides:
  cura-resources-materials-ultimaker,
 Conflicts:
  fdm-materials,
+ cura (<< 2.4),
 Replaces:
  fdm-materials,
-Conflicts:
- cura (<< 2.4),
 Description:  Cura material files
  These files are needed to work with printers like UM2+ and UM3.
 
