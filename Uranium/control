@@ -38,6 +38,8 @@ Depends:
  qml-module-qtqml-models2,
  qml-module-qtquick-dialogs,
 Recommends:
+# For speedups when loading STL files
+ python3-stl,
 # For coloured console output
  python3-colorlog,
 # For numpy to calculate faster
