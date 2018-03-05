@@ -36,6 +36,9 @@ Recommends:
  cura-resources-firmware,
  cura-plugins-all,
  python3-numpy-stl,
+ python3-pyqt5,
+ python3-pyqt5.qtwebsockets,
+ python3-pyqt5.qtx11extras,
 Provides:
  cura-plugin-api-3,
  ${python3:Provides},
