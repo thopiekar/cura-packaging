@@ -2,6 +2,8 @@
 # See debhelper(7) (uncomment to enable)
 # output every command that modifies files on the build system.
 export DH_VERBOSE = 1
+# Suppress __pycache__ pollution
+export PYTHONDONTWRITEBYTECODE = 1
 
 DEB_PACKAGE_VERSION ?= $(shell dpkg-parsechangelog -SVersion | cut -f2 -d":" | cut -f1 -d"~")
 
