@@ -10,7 +10,7 @@ Build-Depends:
  gettext,
  python3-pytest, pylint3,
 Standards-Version: 3.9.6
-Homepage: https://github.com/Ultimaker/Cura
+Homepage: https://thopiekar.eu/cura/ppa/
 X-Python3-Version: >= 3.4
 Vcs-Git: https://github.com/Ultimaker/Cura.git
 Vcs-Browser: https://github.com/Ultimaker/Cura
