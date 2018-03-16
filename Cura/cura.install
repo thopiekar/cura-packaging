@@ -32,9 +32,9 @@ usr/share/cura/resources/extruders
 usr/share/cura/resources/i18n
 usr/share/cura/resources/images
 usr/share/cura/resources/meshes
-usr/share/cura/resources/preset_setting_visibility_groups
 usr/share/cura/resources/quality
 usr/share/cura/resources/qml
+usr/share/cura/resources/setting_visibility
 usr/share/cura/resources/shaders
 usr/share/cura/resources/themes
 usr/share/cura/resources/variants
