@@ -60,6 +60,7 @@ Package: cura-plugins-all
 Architecture: all
 Depends:
  cura-plugin-gcodereader,
+ cura-plugin-postprocessing,
  cura-plugin-sliceinfo,
  cura-plugin-ultimakermachineactions,
  cura-plugin-um3networkprinting,
