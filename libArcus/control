@@ -77,7 +77,7 @@ Depends:
  ${shlibs:Depends},
  ${python3:Depends},
  ${misc:Depends},
- libarcus3 (= ${binary:Version})
+ libarcus3 (= ${binary:Version}),
 Provides:
  ${python3:Provides}
 XB-Python3-Version:
@@ -97,7 +97,7 @@ Depends:
  ${shlibs:Depends},
  ${python3:Depends},
  ${misc:Depends},
- libarcus-dbg (= ${binary:Version})
+ libarcus-dbg (= ${binary:Version}),
 Provides:
  ${python3:Provides}
 XB-Python3-Version:
