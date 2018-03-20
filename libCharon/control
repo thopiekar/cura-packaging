@@ -29,7 +29,6 @@ Depends:
  ${shlibs:Depends},
  ${python3:Depends},
  ${misc:Depends},
- libsavitar0 (= ${binary:Version})
 Provides:
  ${python3:Provides}
 XB-Python3-Version:
