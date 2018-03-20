@@ -9,7 +9,6 @@ export DH_VERBOSE = 1
 override_dh_auto_clean:
 	rm -rf build-*
 	- rm -rf debian/tmp
-	- rm -rf debian/tmp-dbg
 
 override_dh_auto_configure:
 	for PYX in $(shell py3versions -rv) ; do \
@@ -27,17 +26,16 @@ override_dh_auto_build:
 
 override_dh_auto_install:
 	for PYX in $(shell py3versions -rv) ; do \
-	    dh_auto_install -a --builddirectory=build-$${PYX} --destdir=debian/tmp; \
+	    dh_auto_install -a --builddirectory=build-$${PYX} --destdir=debian/tmp ; \
 	done
 
 override_dh_auto_test:
 	for PYX in $(shell py3versions -rv) ; do \
-	    dh_auto_test --builddirectory=build-$${PYX}; \
-	    dh_auto_test --builddirectory=build-$${PYX}-dbg; \
+	    dh_auto_test --builddirectory=build-$${PYX} ; \
 	done
 
-override_dh_missing:
-	dh_missing -a --fail-missing
+override_dh_install:
+	dh_install --fail-missing
 
 override_dh_auto_test:
 	dh_auto_test || true
