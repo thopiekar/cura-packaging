@@ -31,8 +31,13 @@ Conflicts:
  libarcus,
 Replaces:
  libarcus,
-Description:  Communication library between internal components for Ultimaker software 
-  Communication library between internal components for Ultimaker software 
+Description: Message queue for Cura based on protobuf (shared library)
+ This library contains C++ code and Python3 bindings for creating a socket
+ in a thread and using this socket to send and receive messages based on
+ the Protocol Buffers library. It is designed to facilitate the communication
+ between Cura and its backend and similar code.
+ .
+ This package contains the shared library.
 
 Package: libarcus-dbg
 Architecture: any
@@ -41,8 +46,13 @@ Section: debug
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
-Description:  Communication library between internal components for Ultimaker software 
-  Communication library between internal components for Ultimaker software 
+Description: Message queue for Cura based on protobuf (development files)
+ This library contains C++ code and Python3 bindings for creating a socket
+ in a thread and using this socket to send and receive messages based on
+ the Protocol Buffers library. It is designed to facilitate the communication
+ between Cura and its backend and similar code.
+ .
+ This package contains C++ headers.
 
 Package: libarcus-dev
 Architecture: any
@@ -52,8 +62,13 @@ Depends:
  ${shlibs:Depends},
  ${misc:Depends},
  libarcus3 (= ${binary:Version}), 
-Description:  Communication library between internal components for Ultimaker software 
-  Communication library between internal components for Ultimaker software 
+Description: Message queue for Cura based on protobuf (development files)
+ This library contains C++ code and Python3 bindings for creating a socket
+ in a thread and using this socket to send and receive messages based on
+ the Protocol Buffers library. It is designed to facilitate the communication
+ between Cura and its backend and similar code.
+ .
+ This package contains debug files.
 
 Package: python3-arcus
 Architecture: any
@@ -67,8 +82,13 @@ Provides:
  ${python3:Provides}
 XB-Python3-Version:
  ${python3:Versions}
-Description:  Communication library between internal components for Ultimaker software 
-  Communication library between internal components for Ultimaker software 
+Description: Message queue for Cura based on protobuf (Python bindings)
+ This library contains C++ code and Python3 bindings for creating a socket
+ in a thread and using this socket to send and receive messages based on
+ the Protocol Buffers library. It is designed to facilitate the communication
+ between Cura and its backend and similar code.
+ .
+ This package contains the Python 3 bindings.
 
 Package: python3-arcus-dbg
 Architecture: any
@@ -82,5 +102,10 @@ Provides:
  ${python3:Provides}
 XB-Python3-Version:
  ${python3:Versions}
-Description:  Communication library between internal components for Ultimaker software
-  Communication library between internal components for Ultimaker software
+Description: Message queue for Cura based on protobuf (Python bindings)
+ This library contains C++ code and Python3 bindings for creating a socket
+ in a thread and using this socket to send and receive messages based on
+ the Protocol Buffers library. It is designed to facilitate the communication
+ between Cura and its backend and similar code.
+ .
+ This package contains debug builds of the Python 3 bindings.
