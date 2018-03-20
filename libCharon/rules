@@ -61,16 +61,8 @@ override_dh_auto_test:
 	    dh_auto_test --builddirectory=build-$${PYX}-dbg; \
 	done
 
-override_dh_install:
-	dh_install \
-	    -plibsavitar-dbg \
-	    -ppython3-savitar-dbg \
-	    --sourcedir=debian/tmp-dbg --list-missing
-	dh_install -a --remaining-packages --fail-missing
-
-override_dh_strip:
-	dh_strip -plibsavitar0 --dbg-package=libsavitar-dbg
-	dh_strip -ppython3-savitar --dbg-package=python3-savitar-dbg
+override_dh_missing:
+	dh_missing -a --fail-missing
 
 override_dh_auto_test:
 		dh_auto_test || true
