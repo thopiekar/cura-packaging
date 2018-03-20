@@ -12,8 +12,8 @@ Homepage: https://github.com/Ultimaker/libCharon
 Vcs-Git: https://github.com/Ultimaker/libCharon.git
 Vcs-Browser: https://github.com/Ultimaker/libCharon
 
-Package: libcharon0
-Architecture: any
+Package: charon
+Architecture: all
 Multi-Arch: same
 Section: libs
 Depends:
@@ -22,29 +22,8 @@ Depends:
 Description: libCharon libraries
  libCharon is a c++ implementation of 3mf loading with SIP python bindings
 
-Package: libcharon-dbg
-Architecture: any
-Multi-Arch: same
-Section: debug
-Depends:
- ${shlibs:Depends},
- ${misc:Depends},
-Description: libCharon debug symbols
- libCharon is a c++ implementation of 3mf loading with SIP python bindings
-
-Package: libcharon-dev
-Architecture: any
-Multi-Arch: same
-Section: libdevel
-Depends:
- ${shlibs:Depends},
- ${misc:Depends},
- libsavitar0 (= ${binary:Version}), 
-Description: libCharon development files
- libCharon is a c++ implementation of 3mf loading with SIP python bindings
-
 Package: python3-charon
-Architecture: any
+Architecture: all
 Section: python
 Depends:
  ${shlibs:Depends},
@@ -56,19 +35,4 @@ Provides:
 XB-Python3-Version:
  ${python3:Versions}
 Description: Python3 bindings for libCharon
- libCharon is a c++ implementation of 3mf loading with SIP python bindings
-
-Package: python3-charon-dbg
-Architecture: any
-Section: python
-Depends:
- ${shlibs:Depends},
- ${python3:Depends},
- ${misc:Depends},
- libsavitar-dbg (= ${binary:Version})
-Provides:
- ${python3:Provides}
-XB-Python3-Version:
- ${python3:Versions}
-Description: Python3 bindings for libCharon - debug symbols
  libCharon is a c++ implementation of 3mf loading with SIP python bindings
