@@ -19,6 +19,7 @@ Section: libs
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
+ python3-charon,
 Description: libCharon libraries
  libCharon is a c++ implementation of 3mf loading with SIP python bindings
 
