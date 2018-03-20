@@ -2,9 +2,15 @@ Source: libarcus
 Section: devel
 Priority: optional
 Maintainer: Thomas Karl Pietrowski <thopiekar@googlemail.com>
-Build-Depends: debhelper (>= 9), cmake,
+Build-Depends:
+# Debhelper and build systems
+ debhelper (>= 9),
+ cmake,
+# Python3
  python3-all-dev, python3-all-dbg,
+# SIP
  python3-sip-dev, python3-sip-dbg,
+# Protobuf
  protobuf-compiler, libprotobuf-dev (>= 3.0.0), libprotoc-dev,
 Standards-Version: 3.9.8
 X-Python3-Version: >= 3.4
