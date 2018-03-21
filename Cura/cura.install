@@ -8,6 +8,7 @@ usr/lib/cura/plugins/FirmwareUpdateChecker
 usr/lib/cura/plugins/GCodeWriter
 usr/lib/cura/plugins/CuraProfileReader
 usr/lib/cura/plugins/XmlMaterialProfile
+usr/lib/cura/plugins/GCodeGzWriter
 usr/lib/cura/plugins/GCodeProfileReader
 usr/lib/cura/plugins/ImageReader
 usr/lib/cura/plugins/UserAgreementPlugin
