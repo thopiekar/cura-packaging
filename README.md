@@ -1,4 +1,4 @@
-# cura-packaging
+# Cura-packaging
 
 ## Home of the packaging files for:
 * https://launchpad.net/~thopiekar/+archive/ubuntu/cura
