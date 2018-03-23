@@ -26,5 +26,6 @@ There is also a issue report for different problems at [#1094](https://github.co
 * https://code.launchpad.net/~thopiekar/+recipe/cura-engine-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/fdm-materials-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/libarcus-master-daily
+* https://code.launchpad.net/~thopiekar/+recipe/libcharon-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/uranium-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/protobuf-daily (3rd-party)
