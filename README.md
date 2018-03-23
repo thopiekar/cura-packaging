@@ -11,7 +11,7 @@ There is also a issue report for different problems at [#1094](https://github.co
 ## Discussion:
 * https://ultimaker.com/en/community/21651-ubuntu-support-discussion-on-software-packages-hosted-in-my-ppa
 
-### Recipes building packages from `[2.3]` (as known as `stable`):
+### Recipes building packages for `[stable]`):
 * https://code.launchpad.net/~thopiekar/+recipe/cura-stable-daily
 * https://code.launchpad.net/~thopiekar/+recipe/cura-binary-data-stable-daily
 * https://code.launchpad.net/~thopiekar/+recipe/cura-engine-stable-daily
@@ -20,7 +20,7 @@ There is also a issue report for different problems at [#1094](https://github.co
 * https://code.launchpad.net/~thopiekar/+recipe/uranium-stable-daily
 * (protobuf is not updated frequently)
 
-### Recipes building packages from `[master]`:
+### Recipes building packages for `[master]`:
 * https://code.launchpad.net/~thopiekar/+recipe/cura-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/cura-binary-data-master-daily
 * https://code.launchpad.net/~thopiekar/+recipe/cura-engine-master-daily
