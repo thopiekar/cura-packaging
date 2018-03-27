@@ -162,7 +162,7 @@ Depends:
  ${python3:Depends},
 Provides:
  ${python3:Provides},
-Conflicts:
+Replaces:
  cura-plugin-api-3 (< ${binary:Version}),
 XB-Python3-Version:
  ${python3:Versions},
