@@ -13,11 +13,9 @@ usr/lib/cura/plugins/GCodeGzWriter
 usr/lib/cura/plugins/GCodeProfileReader
 usr/lib/cura/plugins/GCodeWriter
 usr/lib/cura/plugins/ImageReader
-usr/lib/cura/plugins/UserAgreementPlugin
 usr/lib/cura/plugins/VersionUpgrade
 usr/lib/cura/plugins/CuraEngineBackend
 usr/lib/cura/plugins/PerObjectSettingsTool
-usr/lib/cura/plugins/PluginBrowser
 usr/lib/cura/plugins/PrepareStage
 usr/lib/cura/plugins/RemovableDriveOutputDevice
 usr/lib/cura/plugins/SimulationView
