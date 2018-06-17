@@ -1,5 +1,5 @@
 Source: stb
-Section: unknown
+Section: devel
 Priority: optional
 Maintainer: Thomas Karl Pietrowski <thopiekar@unknown>
 Build-Depends: debhelper (>= 10)
