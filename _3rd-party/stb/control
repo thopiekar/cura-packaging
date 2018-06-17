@@ -1,7 +1,7 @@
 Source: stb
 Section: devel
 Priority: optional
-Maintainer: Thomas Karl Pietrowski <thopiekar@unknown>
+Maintainer: Thomas Karl Pietrowski <thopiekar@gmail.com>
 Build-Depends: debhelper (>= 10)
 Standards-Version: 4.1.2
 Homepage: <insert the upstream URL, if relevant>
