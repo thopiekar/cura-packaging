@@ -1,0 +1,5 @@
+stb (0.0.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Thomas Karl Pietrowski <thopiekar@unknown>  Sun, 17 Jun 2018 13:10:59 +0200

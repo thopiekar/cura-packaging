@@ -1,0 +1,16 @@
+Source: stb
+Section: unknown
+Priority: optional
+Maintainer: Thomas Karl Pietrowski <thopiekar@unknown>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: https://anonscm.debian.org/git/collab-maint/stb.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/stb.git
+
+Package: stb
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: stb-dev
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
