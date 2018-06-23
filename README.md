@@ -17,6 +17,7 @@ There is also a issue report for different problems at [#1094](https://github.co
 * https://code.launchpad.net/~thopiekar/+recipe/cura-engine-stable-daily
 * https://code.launchpad.net/~thopiekar/+recipe/fdm-materials-stable-daily
 * https://code.launchpad.net/~thopiekar/+recipe/libarcus-stable-daily
+* https://code.launchpad.net/~thopiekar/+recipe/libcharon-stable-daily
 * https://code.launchpad.net/~thopiekar/+recipe/uranium-stable-daily
 * (protobuf is not updated frequently)
 
