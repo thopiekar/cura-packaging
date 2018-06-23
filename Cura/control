@@ -163,7 +163,7 @@ Depends:
 Provides:
  ${python3:Provides},
 Replaces:
- cura-plugin-api-3 (< ${binary:Version}),
+ cura,
 XB-Python3-Version:
  ${python3:Versions},
 Description: GUI G-code generator for 3D printers - UFPWriter plugin
