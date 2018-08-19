@@ -18,6 +18,7 @@ There is also a issue report for different problems at [#1094](https://github.co
 * https://code.launchpad.net/~thopiekar/+recipe/fdm-materials-stable-daily
 * https://code.launchpad.net/~thopiekar/+recipe/libarcus-stable-daily
 * https://code.launchpad.net/~thopiekar/+recipe/uranium-stable-daily
+* https://code.launchpad.net/~thopiekar/+recipe/stb-stable-daily (3rd-party) (not updated frequently)
 * (protobuf is not updated frequently)
 
 ### Recipes building packages for `[master]`:
