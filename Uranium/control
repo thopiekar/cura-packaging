@@ -28,6 +28,7 @@ Depends:
 # 3rd party Python modules
  python3-numpy,
  python3-scipy,
+ python3-shapely,
 # PyQt5
  python3-pyqt5,
  python3-pyqt5.qtopengl,
