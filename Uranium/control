@@ -3,14 +3,19 @@ Section: python
 Priority: optional
 Maintainer: Thomas Karl Pietrowski <thopiekar@googlemail.com>
 Build-Depends:
- debhelper (>= 9), cmake,
+ debhelper (>= 9),
+ cmake,
  python3-all-dev,
- python3-pyqt5, python3-numpy,
+# PyQt
+ python3-pyqt5,
+ python3-numpy,
+ python3-scipy,
+# Docs
  doxygen,
  gettext,
 # Test suite
- python3-pytest, pylint3,
- python3-scipy,
+ python3-pytest,
+ pylint3,
 Standards-Version: 3.9.6
 Homepage: https://github.com/Ultimaker/Uranium
 X-Python3-Version: >= 3.4
@@ -23,11 +28,13 @@ Depends:
  ${shlibs:Depends},
  ${python3:Depends},
  ${misc:Depends},
+# brewed by Ultimaker
  uranium-plugins,
  python3-arcus,
 # 3rd party Python modules
  python3-numpy,
  python3-scipy,
+ python3-shapely,
 # PyQt5
  python3-pyqt5,
  python3-pyqt5.qtopengl,

@@ -10,8 +10,8 @@ Build-Depends:
  python3-all-dev, python3-all-dbg,
 # SIP
  python3-sip-dev, python3-sip-dbg,
-# Protobuf
- protobuf-compiler, libprotobuf-dev (>= 3.0.0), libprotoc-dev,
+# Protobuf >= 3.5
+ protobuf-compiler (>= 3.5), libprotobuf-dev (>= 3.5), libprotoc-dev,
 Standards-Version: 3.9.8
 X-Python3-Version: >= 3.4
 Homepage: https://github.com/Ultimaker/libArcus
