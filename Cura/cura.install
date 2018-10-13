@@ -29,7 +29,6 @@ usr/lib/cura/plugins/XmlMaterialProfile
 usr/lib/cura/plugins/XRayView
 usr/lib/python3/dist-packages/cura
 usr/share/applications/
-usr/share/cura/resources/bundled_packages.json
 usr/share/cura/resources/definitions
 usr/share/cura/resources/extruders
 usr/share/cura/resources/i18n
