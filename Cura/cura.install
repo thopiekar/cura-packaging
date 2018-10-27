@@ -6,6 +6,7 @@ usr/lib/cura/plugins/CuraEngineBackend
 usr/lib/cura/plugins/CuraProfileReader
 usr/lib/cura/plugins/CuraProfileWriter
 usr/lib/cura/plugins/FirmwareUpdateChecker
+usr/lib/cura/plugins/FirmwareUpdater
 usr/lib/cura/plugins/GCodeGzReader
 usr/lib/cura/plugins/GCodeGzWriter
 usr/lib/cura/plugins/GCodeProfileReader
