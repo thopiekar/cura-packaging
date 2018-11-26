@@ -24,7 +24,7 @@ override_dh_auto_configure:
 	                  -DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH) \
 	                  -DURANIUM_SCRIPTS_DIR=/usr/share/uranium/scripts/ \
 	                  -DGETTEXT_MSGINIT_EXECUTABLE=/usr/bin/msginit \
-	                  -DCURA_VERSION="$(DEB_PACKAGE_VERSION)-PPA"
+	                  -DCURA_VERSION="$(DEB_PACKAGE_VERSION)-PPA" \
 			  -DCURA_SDK_VERSION=5.0.0
 
 override_dh_installmime:
