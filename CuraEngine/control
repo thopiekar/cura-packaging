@@ -20,9 +20,9 @@ X-Python3-Version: >= 3.4
 Package: cura-engine
 Architecture: any
 Depends: ${shlibs:Depends}, ${python3:Depends}, ${misc:Depends}
-Description: commandline slicer program for 3-D printers
- 3-D printers need a toolpath for printing, while what is usually distributed
+Description: Slicing application for 3-D printers (CLI)
+ Most 3-D printers need a toolpath for printing, while what is usually distributed
  is a 3-D model.  A slicer programs converts a model to a toolpath, with user
  defined settings for options such as infill density and printing speed.
  .
- This slicer is the commandline backend of Cura.
+ This slicer is used by Cura to create these toolpaths.
