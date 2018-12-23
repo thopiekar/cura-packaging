@@ -46,7 +46,7 @@ Provides:
  ${python3:Provides},
 XB-Python3-Version:
  ${python3:Versions},
-Description: GUI G-code generator for 3D printers
+Description: Slicing application for 3-D printers (GUI)
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
@@ -73,7 +73,7 @@ Provides:
  cura-plugins,
 Enhances:
  cura,
-Description: GUI G-code generator for 3D printers - plugin metapackage
+Description: Slicing application for 3-D printers (GUI) - plugin metapackage
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
@@ -96,7 +96,7 @@ Provides:
  ${python3:Provides},
 XB-Python3-Version:
  ${python3:Versions},
-Description:  GUI G-code generator for 3D printers - G-code reader plugin
+Description:  Slicing application for 3-D printers (GUI) - GCodeReader plugin
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
@@ -119,7 +119,7 @@ Provides:
  ${python3:Provides},
 XB-Python3-Version:
  ${python3:Versions},
-Description:  GUI G-code generator for 3D printers - Post-Processing plugin
+Description:  Slicing application for 3-D printers (GUI) - PostProcessingPlugin plugin
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
@@ -142,7 +142,7 @@ Provides:
  ${python3:Provides},
 XB-Python3-Version:
  ${python3:Versions},
-Description:  GUI G-code generator for 3D printers - sliceinfo plugin
+Description:  Slicing application for 3-D printers (GUI) - SliceInfoPlugin plugin
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
@@ -168,7 +168,7 @@ Replaces:
  cura,
 XB-Python3-Version:
  ${python3:Versions},
-Description: GUI G-code generator for 3D printers - UFPWriter plugin
+Description: Slicing application for 3-D printers (GUI) - UFPWriter plugin
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
@@ -191,7 +191,7 @@ Provides:
  ${python3:Provides},
 XB-Python3-Version:
  ${python3:Versions},
-Description: GUI G-code generator for 3D printers - ultimakermachineactions plugin
+Description: Slicing application for 3-D printers (GUI) - UltimakerMachineActions plugin
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
@@ -220,7 +220,7 @@ Replaces:
  cura-extra-plugin-um3networkprinting,
 XB-Python3-Version:
  ${python3:Versions},
-Description:  GUI G-code generator for 3D printers - um3networkprinting plugin
+Description:  Slicing application for 3-D printers (GUI) - UM3NetworkPrinting plugin
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
@@ -241,7 +241,7 @@ Depends:
  ${python3:Depends},
 XB-Python3-Version:
  ${python3:Versions},
-Description: GUI G-code generator for 3D printers - usbprinting plugin
+Description: Slicing application for 3-D printers (GUI) - USBPrinting plugin
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
@@ -253,7 +253,7 @@ Description: GUI G-code generator for 3D printers - usbprinting plugin
  .
  This package adds additional functions to be able to print via USB.
 
-Package: cura-plugin-x3dreader
+Package: cura-plugin-X3DReader
 Architecture: all
 Depends:
  cura-plugin-api-3,
@@ -264,7 +264,7 @@ Provides:
  ${python3:Provides},
 XB-Python3-Version:
  ${python3:Versions},
-Description: GUI G-code generator for 3D printers - x3dreader plugin
+Description: Slicing application for 3-D printers (GUI) - x3dreader plugin
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
