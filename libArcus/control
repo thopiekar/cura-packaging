@@ -1,7 +1,7 @@
 Source: libarcus
 Section: devel
 Priority: optional
-Maintainer: Thomas Karl Pietrowski <thopiekar@googlemail.com>
+Maintainer: Thomas Karl Pietrowski <thopiekar@gmail.com>
 Build-Depends:
 # Debhelper and build systems
  debhelper (>= 9),

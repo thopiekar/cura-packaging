@@ -1,7 +1,7 @@
 Source: libcharon
 Section: devel
 Priority: optional
-Maintainer: Thomas Karl Pietrowski <thopiekar@googlemail.com>
+Maintainer: Thomas Karl Pietrowski <thopiekar@gmail.com>
 Build-Depends:
  debhelper (>= 9),
  cmake,

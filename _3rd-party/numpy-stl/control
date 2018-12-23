@@ -1,7 +1,7 @@
 Source: numpy-stl
 Section: python
 Priority: optional
-Maintainer: Thomas Karl Pietrowski <thopiekar@googlemail.com>
+Maintainer: Thomas Karl Pietrowski <thopiekar@gmail.com>
 Build-Depends: debhelper (>= 9), dh-python,
 # Python development files
  python-all-dev, python3-all-dev,
