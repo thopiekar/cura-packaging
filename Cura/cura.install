@@ -18,6 +18,7 @@
 /usr/lib/cura/plugins/MonitorStage
 /usr/lib/cura/plugins/PerObjectSettingsTool
 /usr/lib/cura/plugins/PrepareStage
+/usr/lib/cura/plugins/PreviewStage
 /usr/lib/cura/plugins/RemovableDriveOutputDevice
 /usr/lib/cura/plugins/SimulationView
 /usr/lib/cura/plugins/SolidView
