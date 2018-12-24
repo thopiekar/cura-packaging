@@ -21,8 +21,9 @@ Provides:
  cura-firmware,
  cura-resources-materials-generic,
  cura-resources-materials-ultimaker,
-Description:  Cura material files
- These files are needed to work with printers like UM2+ and UM3.
+Description: Slicing application for 3-D printers - firmware files
+ This package provides firmware for different kind of printers.
+ So not only Ultimaker printers, but also printers, which are opensource at least.
 
 ## Already built in "cura"
 #Package: cura-resources-i18n
@@ -35,4 +36,3 @@ Description:  Cura material files
 # cura-resources-materials-ultimaker,
 #Description:  Cura material files
 # These files are needed to work with printers like UM2+ and UM3.
-
