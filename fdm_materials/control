@@ -28,6 +28,5 @@ Conflicts:
  cura (<< 2.4),
 Replaces:
  fdm-materials,
-Description:  Cura material files
+Description: Slicing application for 3-D printers - material files
  These files are needed to work with printers like UM2+ and UM3.
-
