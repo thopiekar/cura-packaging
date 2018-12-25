@@ -256,7 +256,7 @@ Description: Slicing application for 3-D printers (GUI) - USBPrinting plugin
  .
  This package adds additional functions to be able to print via USB.
 
-Package: cura-plugin-X3DReader
+Package: cura-plugin-x3dreader
 Architecture: all
 Depends:
  cura-plugin-api-3,
