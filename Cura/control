@@ -76,7 +76,7 @@ Provides:
  cura-plugins,
 Enhances:
  cura,
-Description: Slicing application for 3-D printers (GUI) - plugin metapackage
+Description: Slicing application for 3-D printers - plugin metapackage
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
@@ -99,7 +99,7 @@ Provides:
  ${python3:Provides},
 XB-Python3-Version:
  ${python3:Versions},
-Description:  Slicing application for 3-D printers (GUI) - GCodeReader plugin
+Description: Slicing application for 3-D printers - GCodeReader plugin
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
@@ -122,7 +122,7 @@ Provides:
  ${python3:Provides},
 XB-Python3-Version:
  ${python3:Versions},
-Description:  Slicing application for 3-D printers (GUI) - PostProcessingPlugin plugin
+Description: Slicing application for 3-D printers - PostProcessingPlugin plugin
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
@@ -145,7 +145,7 @@ Provides:
  ${python3:Provides},
 XB-Python3-Version:
  ${python3:Versions},
-Description:  Slicing application for 3-D printers (GUI) - SliceInfoPlugin plugin
+Description: Slicing application for 3-D printers - SliceInfoPlugin plugin
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
@@ -171,7 +171,7 @@ Replaces:
  cura,
 XB-Python3-Version:
  ${python3:Versions},
-Description: Slicing application for 3-D printers (GUI) - UFPWriter plugin
+Description: Slicing application for 3-D printers - UFPWriter plugin
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
@@ -194,7 +194,7 @@ Provides:
  ${python3:Provides},
 XB-Python3-Version:
  ${python3:Versions},
-Description: Slicing application for 3-D printers (GUI) - UltimakerMachineActions plugin
+Description: Slicing application for 3-D printers - UltimakerMachineActions plugin
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
@@ -223,7 +223,7 @@ Replaces:
  cura-extra-plugin-um3networkprinting,
 XB-Python3-Version:
  ${python3:Versions},
-Description:  Slicing application for 3-D printers (GUI) - UM3NetworkPrinting plugin
+Description: Slicing application for 3-D printers - UM3NetworkPrinting plugin
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
@@ -244,7 +244,7 @@ Depends:
  ${python3:Depends},
 XB-Python3-Version:
  ${python3:Versions},
-Description: Slicing application for 3-D printers (GUI) - USBPrinting plugin
+Description: Slicing application for 3-D printers - USBPrinting plugin
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
@@ -267,7 +267,7 @@ Provides:
  ${python3:Provides},
 XB-Python3-Version:
  ${python3:Versions},
-Description: Slicing application for 3-D printers (GUI) - x3dreader plugin
+Description: Slicing application for 3-D printers - x3dreader plugin
  Cura converts digital 3D models into printing instructions (G-code)
  for your 3D printer. It cuts the model into horizontal slices (layers),
  generates toolpaths to fill them and calculates the amount of material
