@@ -31,9 +31,9 @@ Depends:
  python3-savitar,
 # QML
  qml-module-qtqml-models2,
- qml-module-qtquick-controls,
- qml-module-qtquick-controls2,
- qml-module-qtquick-dialogs,
+ qml-module-qtquick-controls (>= 5.10),
+ qml-module-qtquick-controls2 (>= 5.10),
+ qml-module-qtquick-dialogs (>= 5.10),
  qml-module-qt-labs-settings,
  qml-module-qt-labs-folderlistmodel,
 Recommends:
