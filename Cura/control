@@ -64,6 +64,7 @@ Description: Slicing application for 3-D printers (GUI)
 Package: cura-plugins-all
 Architecture: all
 Depends:
+ cura-plugin-curadrive,
  cura-plugin-gcodereader,
  cura-plugin-postprocessing,
  cura-plugin-sliceinfo,
@@ -87,6 +88,29 @@ Description: Slicing application for 3-D printers - plugin metapackage
  most notably the Ultimaker.
  .
  This package is a meta package to ensure, that all optional plugins have been installed.
+
+Package: cura-plugin-curadrive
+Architecture: all
+Depends:
+ cura-plugin-api-3,
+ ${shlibs:Depends},
+ ${misc:Depends},
+ ${python3:Depends},
+Provides:
+ ${python3:Provides},
+XB-Python3-Version:
+ ${python3:Versions},
+Description: Slicing application for 3-D printers - CuraDrive plugin
+ Cura converts digital 3D models into printing instructions (G-code)
+ for your 3D printer. It cuts the model into horizontal slices (layers),
+ generates toolpaths to fill them and calculates the amount of material
+ to be extruded.
+ .
+ Cura is easy to use for novices and provide over 200 settings to adjust
+ for the expert.  It can output G-Code for several series of 3D printers,
+ most notably the Ultimaker.
+ .
+ This package provides a service, which allows backups of configurations and settings to Ultimaker servers.
 
 Package: cura-plugin-gcodereader
 Architecture: all
