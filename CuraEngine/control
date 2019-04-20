@@ -11,7 +11,7 @@ Build-Depends:
  stb-dev,
 # Tests
  libcppunit-dev,
- gtest,
+ libgtest-dev,
 Standards-Version: 3.9.6
 Homepage: https://github.com/Ultimaker/CuraEngine
 Vcs-Git: https://github.com/Ultimaker/CuraEngine.git
