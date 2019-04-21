@@ -23,6 +23,7 @@
 /usr/lib/cura/plugins/SolidView
 /usr/lib/cura/plugins/SupportEraser
 /usr/lib/cura/plugins/Toolbox
+/usr/lib/cura/plugins/UFPReader
 /usr/lib/cura/plugins/UFPWriter
 /usr/lib/cura/plugins/VersionUpgrade
 /usr/lib/cura/plugins/XmlMaterialProfile
@@ -39,6 +40,7 @@
 /usr/share/cura/resources/quality
 /usr/share/cura/resources/setting_visibility
 /usr/share/cura/resources/shaders
+/usr/share/cura/resources/texts
 /usr/share/cura/resources/themes
 /usr/share/cura/resources/variants
 /usr/share/icons/hicolor/128x128/apps
