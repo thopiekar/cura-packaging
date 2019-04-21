@@ -46,7 +46,11 @@ Recommends:
  python3-pyqt5.qtx11extras,
 Provides:
  cura-plugin-api-3,
+ cura-plugin-ufpreader,
+ cura-plugin-ufpwriter,
  ${python3:Provides},
+Conflicts:
+ cura-plugin-ufpwriter,
 XB-Python3-Version:
  ${python3:Versions},
 Description: Slicing application for 3-D printers (GUI)
@@ -68,7 +72,6 @@ Depends:
  cura-plugin-gcodereader,
  cura-plugin-postprocessing,
  cura-plugin-sliceinfo,
- cura-plugin-ufpwriter,
  cura-plugin-ultimakermachineactions,
  cura-plugin-um3networkprinting,
  cura-plugin-usbprinting,
@@ -180,32 +183,6 @@ Description: Slicing application for 3-D printers - SliceInfoPlugin plugin
  most notably the Ultimaker.
  .
  This package provides a tool, which sends statistics to Ultimaker.
-
-Package: cura-plugin-ufpwriter
-Architecture: all
-Depends:
- cura-plugin-api-3,
- python3-charon,
- ${shlibs:Depends},
- ${misc:Depends},
- ${python3:Depends},
-Provides:
- ${python3:Provides},
-Replaces:
- cura,
-XB-Python3-Version:
- ${python3:Versions},
-Description: Slicing application for 3-D printers - UFPWriter plugin
- Cura converts digital 3D models into printing instructions (G-code)
- for your 3D printer. It cuts the model into horizontal slices (layers),
- generates toolpaths to fill them and calculates the amount of material
- to be extruded.
- .
- Cura is easy to use for novices and provide over 200 settings to adjust
- for the expert.  It can output G-Code for several series of 3D printers,
- most notably the Ultimaker.
- .
- This package provides a UFPWriter plugin.
 
 Package: cura-plugin-ultimakermachineactions
 Architecture: all
