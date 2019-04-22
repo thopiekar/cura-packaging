@@ -27,6 +27,7 @@ Depends:
 # brewed by Ultimaker
  cura-engine,
  cura-resources-materials,
+ python3-charon,
  python3-uranium,
  python3-savitar,
 # QML
