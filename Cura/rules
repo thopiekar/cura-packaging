@@ -28,6 +28,12 @@ override_dh_auto_configure:
 	                  -DCURA_VERSION="$(DEB_PACKAGE_VERSION)-PPA" \
 	                  -DCURA_SDK_VERSION=6.0.0
 
+override_dh_auto_install:
+	dh_auto_install
+	# Hacking Cura with some environment hacks for KDE
+	mv debian/tmp/usr/bin/cura debian/tmp/usr/bin/cura.real
+	cp -fv debian/cura.envhack debian/tmp/usr/bin/cura
+
 override_dh_installmime:
 	cp -fv cura.sharedmimeinfo debian/cura.sharedmimeinfo
 	dh_installmime -O--buildsystem=cmake -O--parallel
