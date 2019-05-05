@@ -1,7 +1,6 @@
 /usr/bin/
 /usr/lib/cura/plugins/3MFReader
 /usr/lib/cura/plugins/3MFWriter
-/usr/lib/cura/plugins/AMFReader
 /usr/lib/cura/plugins/CuraEngineBackend
 /usr/lib/cura/plugins/CuraProfileReader
 /usr/lib/cura/plugins/CuraProfileWriter
