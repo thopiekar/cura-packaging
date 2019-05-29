@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Thomas Karl Pietrowski <thopiekar@gmail.com>
 Build-Depends:
  debhelper (>= 9), cmake,
+ libpthread-stubs0-dev,
  python3-all-dev,
  libarcus-dev,
 # Protobuf (>= 3.5)
