@@ -11,26 +11,6 @@ export PYTEST_RUNNER=false
 	      --buildsystem=pybuild \
 	      --parallel
 
-#### CONFIGURE ####
-#override_dh_auto_configure:
-#	@echo "Nothing to configure over here..."
-
-#### BUILD ####
-#override_dh_auto_build:
-#	# RELEASE
-#	for PYX in $(shell pyversions -rv) $(shell py3versions -rv) ; do \
-#	    python$${PYX} setup.py build ; \
-#	    python$${PYX} setup.py install --root=debian/numpy-stl ; \
-#	    python$${PYX} setup.py clean ; \
-#	done
-#	
-#	# DEBUG
-#	for PYX in $(shell pyversions -rv) $(shell py3versions -rv) ; do \
-#	    python$${PYX}-dbg setup.py build ; \
-#	    python$${PYX}-dbg setup.py install --root=debian/numpy-stl ; \
-#	    python$${PYX}-dbg setup.py clean ; \
-#	done
-
 override_dh_auto_test:
 	@echo "Nothing to test over here..."
 
