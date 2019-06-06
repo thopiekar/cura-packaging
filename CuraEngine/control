@@ -12,8 +12,9 @@ Build-Depends:
  stb-dev,
 # Tests
  libcppunit-dev,
+# # Optional installation of gmock
+ libgmock-dev | libgtest-dev
  libgtest-dev,
- libgmock-dev,
 Standards-Version: 3.9.6
 Homepage: https://github.com/Ultimaker/CuraEngine
 Vcs-Git: https://github.com/Ultimaker/CuraEngine.git
