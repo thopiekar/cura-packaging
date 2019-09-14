@@ -24,6 +24,7 @@
 /usr/lib/cura/plugins/SolidView
 /usr/lib/cura/plugins/SupportEraser
 /usr/lib/cura/plugins/Toolbox
+/usr/lib/cura/plugins/TrimeshReader
 /usr/lib/cura/plugins/UFPReader
 /usr/lib/cura/plugins/UFPWriter
 /usr/lib/cura/plugins/VersionUpgrade
