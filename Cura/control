@@ -11,7 +11,7 @@ Build-Depends:
 # Generating translations
  gettext,
  python3-pytest,
- pylint3,
+ pylint3 | pylint,
 Standards-Version: 3.9.6
 Homepage: https://thopiekar.eu/cura/ppa/
 X-Python3-Version: >= 3.4
