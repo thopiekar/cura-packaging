@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+export DH_VERBOSE = 1
+
+export PYTEST_RUNNER=false
+
+%:
+	dh $@ --with python2 \
+	      --with python3 \
+	      --buildsystem=pybuild \
+	      --parallel
+
+override_dh_auto_test:
+	@echo "Nothing to test over here..."
+
+override_dh_install:
+	dh_install --fail-missing
