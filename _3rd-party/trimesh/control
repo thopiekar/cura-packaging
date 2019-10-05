@@ -8,6 +8,23 @@ Build-Depends:
  python-all-dev, python3-all-dev,
 # Python setuptools
  python-setuptools, python3-setuptools,
+# pypandoc
+ python-pypandoc, python3-pypandoc,
+# Numpy
+ python-numpy, python3-numpy,
+# SciPy
+ python-scipy, python3-scipy,
+# networkx
+ python-networkx, python3-networkx,
+# recommonmark
+ python-recommonmark, python3-recommonmark,
+# jupyter
+ python-jupyter-core, python3-jupyter-core,
+# Sphinx
+ python-sphinx, python3-sphinx,
+ sphinx-rtd-theme-common,
+# PyOpenSSL
+ python-openssl, python3-openssl,
 Standards-Version: 3.9.8
 X-Python-Version: >= 2.7
 X-Python3-Version: >= 3.4
