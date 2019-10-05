@@ -1,0 +1,40 @@
+Source: trimesh
+Section: python
+Priority: optional
+Maintainer: Thomas Karl Pietrowski <thopiekar@gmail.com>
+Build-Depends:
+ debhelper (>= 9), dh-python,
+# Python development files
+ python-all-dev, python3-all-dev,
+# Python setuptools
+ python-setuptools, python3-setuptools,
+Standards-Version: 3.9.8
+X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.4
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: https://anonscm.debian.org/collab-maint/trimesh.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/trimesh.git
+
+Package: trimesh
+Architecture: all
+Depends:
+ python-trimesh,
+ python3-trimesh,
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: python-trimesh
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${python:Depends},
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: python3-trimesh
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
