@@ -15,7 +15,7 @@ Build-Depends:
  gettext,
 # Test suite
  python3-pytest,
- pylint3,
+ pylint3 | pylint,
 Standards-Version: 3.9.6
 Homepage: https://github.com/Ultimaker/Uranium
 X-Python3-Version: >= 3.4
