@@ -13,7 +13,7 @@ DEB_PACKAGE_VERSION ?= $(shell dpkg-parsechangelog -SVersion | cut -f2 -d":" | c
 
 override_dh_clean:
 	rm -fv debian/cura.sharedmimeinfo
-	patch --dry-run -Rf -i debian/patches/02-exclude-fonts.patch && patch -R -i debian/patches/02-exclude-fonts.patch || true
+	# patch --dry-run -Rf -i debian/patches/02-exclude-fonts.patch && patch -R -i debian/patches/02-exclude-fonts.patch || true
 	dh_clean -O--buildsystem=cmake -O--parallel
 
 override_dh_install:
