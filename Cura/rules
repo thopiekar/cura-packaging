@@ -20,7 +20,7 @@ override_dh_install:
 	dh_install --fail-missing
 
 override_dh_auto_configure:
-	patch -f -i debian/patches/02-exclude-fonts.patch
+	# patch -f -i debian/patches/02-exclude-fonts.patch
 	dh_auto_configure -- \
 	                  -DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH) \
 	                  -DURANIUM_SCRIPTS_DIR=/usr/share/uranium/scripts/ \
