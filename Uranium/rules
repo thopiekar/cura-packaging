@@ -10,22 +10,49 @@ export PYTHONDONTWRITEBYTECODE = 1
 
 override_dh_auto_configure:
 	for PYX in $(shell py3versions -rv) ; do \
-	    dh_auto_configure --builddirectory=build-$${PYX}; \
+	    mkdir -p build-$${PYX}; \
+	    dh_auto_configure -a \
+                          --builddirectory=build-$${PYX} -- \
+	                      $(CMAKE_COMMON_OPTIONS) \
+	                      -DCMAKE_BUILD_TYPE:STRING="RelWithDebInfo" \
+	                      -DCMAKE_INSTALL_LIBDIR=/usr/lib/$(DEB_HOST_MULTIARCH) \
+	                      -DPYTHON_LIBRARY:FILEPATH=/usr/lib/$(DEB_HOST_MULTIARCH)/libpython$${PYX}m.so \
+	                      -DPYTHON_SITE_PACKAGES_DIR:FILEPATH=/usr/lib/python$${PYX}/dist-packages \
+	                      -DPYTHON_INCLUDE_DIR:FILEPATH=/usr/include/python$${PYX}m \
+	                      -DPYTHON_EXECUTABLE:FILEPATH=/usr/bin/python$${PYX} ; \
+	done
+	
+	# DEBUG
+	for PYX in $(shell py3versions -rv) ; do \
+	    mkdir -p build-$${PYX}-dbg; \
+	    dh_auto_configure -a \
+                          --builddirectory=build-$${PYX}-dbg -- \
+	                      $(CMAKE_COMMON_OPTIONS) \
+	                      -DCMAKE_BUILD_TYPE:STRING="Debug" \
+	                      -DCMAKE_INSTALL_LIBDIR=/usr/lib/debug/lib/$(DEB_HOST_MULTIARCH) \
+	                      -DPYTHON_LIBRARY:FILEPATH=/usr/lib/$(DEB_HOST_MULTIARCH)/libpython$${PYX}m.so \
+	                      -DPYTHON_DEBUG_LIBRARY:FILEPATH=/usr/lib/$(DEB_HOST_MULTIARCH)/libpython$${PYX}dm.so \
+	                      -DPYTHON_SITE_PACKAGES_DIR:FILEPATH=/usr/lib/python$${PYX}/dist-packages \
+	                      -DPYTHON_INCLUDE_DIR:FILEPATH=/usr/include/python$${PYX}dm \
+	                      -DPYTHON_EXECUTABLE:FILEPATH=/usr/bin/python$${PYX}dm ; \
 	done
 
 override_dh_auto_build:
 	for PYX in $(shell py3versions -rv) ; do \
-	    dh_auto_build --builddirectory=build-$${PYX}; \
+	    dh_auto_build -a --builddirectory=build-$${PYX}; \
+	    dh_auto_build -a --builddirectory=build-$${PYX}-dbg; \
 	done
 
 override_dh_auto_install:
 	for PYX in $(shell py3versions -rv) ; do \
-	    dh_auto_install --builddirectory=build-$${PYX} --destdir=debian/tmp ; \
+	    dh_auto_install -a --builddirectory=build-$${PYX} --destdir=debian/tmp; \
+	    dh_auto_install -a --builddirectory=build-$${PYX}-dbg --destdir=debian/tmp-dbg; \
 	done
 
 override_dh_auto_test:
 	for PYX in $(shell py3versions -rv) ; do \
-	    dh_auto_test --builddirectory=build-$${PYX} || true ; \
+	    dh_auto_test --builddirectory=build-$${PYX}; \
+	    dh_auto_test --builddirectory=build-$${PYX}-dbg; \
 	done
 
 override_dh_install:
