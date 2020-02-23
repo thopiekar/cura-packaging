@@ -34,7 +34,7 @@ override_dh_auto_configure:
 	                      -DPYTHON_DEBUG_LIBRARY:FILEPATH=/usr/lib/$(DEB_HOST_MULTIARCH)/libpython$${PYX}dm.so \
 	                      -DPYTHON_SITE_PACKAGES_DIR:FILEPATH=/usr/lib/python$${PYX}/dist-packages \
 	                      -DPYTHON_INCLUDE_DIR:FILEPATH=/usr/include/python$${PYX}dm \
-	                      -DPYTHON_EXECUTABLE:FILEPATH=/usr/bin/python$${PYX}dm ; \
+	                      -DPYTHON_EXECUTABLE:FILEPATH=/usr/bin/python$${PYX}-dbg ; \
 	done
 
 override_dh_auto_build:
