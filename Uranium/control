@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Thomas Karl Pietrowski <thopiekar@gmail.com>
 Build-Depends:
  debhelper (>= 9),
+ dh-python,
  cmake,
  python3-all-dev,
  python3-all-dbg,
