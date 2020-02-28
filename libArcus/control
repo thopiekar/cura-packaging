@@ -5,6 +5,7 @@ Maintainer: Thomas Karl Pietrowski <thopiekar@gmail.com>
 Build-Depends:
 # Debhelper and build systems
  debhelper (>= 9),
+ dh-python,
  cmake,
 # Python3
  python3-all-dev, python3-all-dbg,
