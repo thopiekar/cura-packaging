@@ -2,7 +2,10 @@ Source: libsavitar
 Section: devel
 Priority: optional
 Maintainer: Thomas Karl Pietrowski <thopiekar@gmail.com>
-Build-Depends: debhelper (>= 9), cmake,
+Build-Depends:
+ debhelper (>= 9),
+ dh-python,
+ cmake,
  python3-all-dev, python3-all-dbg,
  python3-sip-dev, python3-sip-dbg,
 Standards-Version: 3.9.8
