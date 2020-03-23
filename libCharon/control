@@ -5,6 +5,7 @@ Maintainer: Thomas Karl Pietrowski <thopiekar@gmail.com>
 Build-Depends:
  debhelper (>= 9),
  cmake,
+ dh_python,
  python3-all-dev, python3-all-dbg,
 Standards-Version: 3.9.8
 X-Python3-Version: >= 3.4
