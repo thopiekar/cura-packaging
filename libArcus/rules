@@ -7,7 +7,7 @@ CMAKE_COMMON_OPTIONS:=-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH) \
                       -DBUILD_EXAMPLES:BOOL=OFF
 
 %:
-	dh $@ --buildsystem=cmake --with python3,sip3 --parallel
+	dh $@ --buildsystem=cmake --with python3 --parallel
 
 override_dh_auto_clean:
 	rm -rf build-*
