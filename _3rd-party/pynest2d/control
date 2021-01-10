@@ -1,0 +1,50 @@
+Source: pynest2d
+Section: devel
+Priority: optional
+Maintainer: Thomas Karl Pietrowski <thopiekar@gmail.com>
+Build-Depends:
+# Debhelper and build systems
+ debhelper (>= 10),
+ dh-python,
+ cmake,
+# Python3
+ python3-all-dev,
+ python3-all-dbg,
+# SIP
+ python3-sip-dev,
+ python3-sip-dbg,
+# libnest2d
+ libnest2d-dev,
+Standards-Version: 3.9.8
+X-Python3-Version: >= 3.4
+Homepage: https://github.com/Ultimaker/pynest2d
+Vcs-Git: https://github.com/Ultimaker/pynest2d.git
+Vcs-Browser: https://github.com/Ultimaker/pynest2d
+
+Package: python3-pynest2d
+Architecture: any
+Section: python
+Depends:
+ ${shlibs:Depends},
+ ${python3:Depends},
+ ${misc:Depends},
+Provides:
+ ${python3:Provides}
+XB-Python3-Version:
+ ${python3:Versions}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: python3-pynest2d-dbg
+Architecture: any
+Section: python
+Depends:
+ ${shlibs:Depends},
+ ${python3:Depends},
+ ${misc:Depends},
+Provides:
+ ${python3:Provides}
+XB-Python3-Version:
+ ${python3:Versions}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

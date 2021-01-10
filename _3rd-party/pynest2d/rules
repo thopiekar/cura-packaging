@@ -1,0 +1,74 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+export DH_VERBOSE=1
+
+CMAKE_COMMON_OPTIONS:=-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH) \
+                      -DBUILD_EXAMPLES:BOOL=OFF
+
+%:
+	dh $@ --buildsystem=cmake --with python3 --parallel
+
+override_dh_auto_clean:
+	rm -rf build-*
+	- rm -rf debian/tmp
+	- rm -rf debian/tmp-dbg
+
+override_dh_auto_configure:
+	for PYX in $(shell py3versions -rv) ; do \
+	    mkdir -p build-$${PYX}; \
+	    dh_auto_configure -a \
+	        --builddirectory=build-$${PYX} -- \
+	        $(CMAKE_COMMON_OPTIONS) \
+	        -DCMAKE_BUILD_TYPE:STRING="RelWithDebInfo" \
+	        -DPYTHON_SITE_PACKAGES_DIR:FILEPATH=/usr/lib/python$${PYX}/dist-packages \
+	        -DPYTHON_EXECUTABLE:FILEPATH=$$(which python$${PYX}) \
+	        -DCMAKE_INSTALL_LIBDIR=/usr/lib/$(DEB_HOST_MULTIARCH) ; \
+	done
+	
+	# DEBUG
+	for PYX in $(shell py3versions -rv) ; do \
+	    mkdir -p build-$${PYX}-dbg; \
+	    dh_auto_configure -a \
+	        --builddirectory=build-$${PYX}-dbg -- \
+	        $(CMAKE_COMMON_OPTIONS) \
+	        -DCMAKE_BUILD_TYPE:STRING="Debug" \
+	        -DPYTHON_SITE_PACKAGES_DIR:FILEPATH=/usr/lib/python$${PYX}/dist-packages \
+	        -DPYTHON_EXECUTABLE:FILEPATH=$$(which python$${PYX}) \
+	        -DCMAKE_INSTALL_LIBDIR=/usr/lib/debug/lib/$(DEB_HOST_MULTIARCH) \
+	        -DPYTHON_DEBUG_LIBRARY:FILEPATH=/usr/lib/$(DEB_HOST_MULTIARCH)/libpython$${PYX}d.so ; \
+	done
+
+override_dh_auto_build:
+	for PYX in $(shell py3versions -rv) ; do \
+	    dh_auto_build -a --builddirectory=build-$${PYX}; \
+	    dh_auto_build -a --builddirectory=build-$${PYX}-dbg; \
+	done
+
+override_dh_auto_install:
+	for PYX in $(shell py3versions -rv) ; do \
+	    dh_auto_install -a --builddirectory=build-$${PYX} --destdir=debian/tmp; \
+	    dh_auto_install -a --builddirectory=build-$${PYX}-dbg --destdir=debian/tmp-dbg; \
+	done
+
+override_dh_auto_test:
+	for PYX in $(shell py3versions -rv) ; do \
+	    dh_auto_test --builddirectory=build-$${PYX}; \
+	    dh_auto_test --builddirectory=build-$${PYX}-dbg; \
+	done
+
+override_dh_install:
+	dh_install \
+	    -ppython3-pynest2d-dbg \
+	    --sourcedir=debian/tmp-dbg \
+	    --list-missing
+	dh_install \
+	    -a \
+	    --remaining-packages \
+	    --fail-missing
+
+override_dh_strip:
+	dh_strip -ppython3-pynest2d --dbg-package=python3-pynest2d-dbg
+
+override_dh_auto_test:
+	dh_auto_test || true
