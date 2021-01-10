@@ -20,8 +20,10 @@ Architecture: any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: 2D irregular bin packaging and nesting C++ header-only library
+ 2D irregular bin packaging and nesting C++ header-only library
+ .
+ Library
 
 Package: libnest2d-dev
 Architecture: all
@@ -31,5 +33,7 @@ Depends:
  libnlopt-dev,
  libnlopt-cxx-dev,
  ${misc:Depends},
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: 2D irregular bin packaging and nesting C++ header-only library
+ 2D irregular bin packaging and nesting C++ header-only library
+ .
+ Development files
