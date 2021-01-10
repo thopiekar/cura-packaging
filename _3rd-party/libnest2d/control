@@ -3,14 +3,14 @@ Section: devel
 Priority: optional
 Maintainer: Thomas Karl Pietrowski <thopiekar@gmail.com>
 Build-Depends:
- debhelper-compat (= 12),
+ debhelper (>= 10),
  cmake,
 # libclipper-dev,
  libboost-dev,
  libpolyclipping-dev,
  libnlopt-dev,
  libnlopt-cxx-dev,
-Standards-Version: 4.4.1
+Standards-Version: 4.1.2
 Homepage: https://github.com/prusa3d/PrusaSlicer
 Vcs-Browser: https://github.com/tamasmeszaros/libnest2d
 Vcs-Git: https://github.com/tamasmeszaros/libnest2d.git
