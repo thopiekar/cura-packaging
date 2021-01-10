@@ -13,8 +13,12 @@ Build-Depends:
 # SIP
  python3-sip-dev,
  python3-sip-dbg,
-# libnest2d
+# libnest2d and others
  libnest2d-dev,
+ libboost-dev,
+ libpolyclipping-dev,
+ libnlopt-dev,
+ libnlopt-cxx-dev | libnlopt-dev,
 Standards-Version: 3.9.8
 X-Python3-Version: >= 3.4
 Homepage: https://github.com/Ultimaker/pynest2d
