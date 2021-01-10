@@ -33,6 +33,7 @@ Depends:
  python3-charon,
  python3-uranium,
  python3-savitar,
+ python3-pynest2d,
 # QML
  qml-module-qtqml-models2,
  qml-module-qtquick-controls (>= 5.10),
