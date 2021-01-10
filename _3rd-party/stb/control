@@ -2,7 +2,8 @@ Source: stb
 Section: devel
 Priority: optional
 Maintainer: Thomas Karl Pietrowski <thopiekar@gmail.com>
-Build-Depends: debhelper (>= 10)
+Build-Depends:
+ debhelper (>= 10),
 Standards-Version: 4.1.2
 Homepage: <insert the upstream URL, if relevant>
 #Vcs-Git: https://anonscm.debian.org/git/collab-maint/stb.git
@@ -10,7 +11,9 @@ Homepage: <insert the upstream URL, if relevant>
 
 Package: stb
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
 Provides: stb-dev
 Description: Sean's Tool Box - single-file public domain (or MIT licensed) libraries for C/C++
  This is a single header file with a bunch of useful utilities for getting stuff done in C/C++.
