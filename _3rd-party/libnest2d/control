@@ -9,7 +9,7 @@ Build-Depends:
  libboost-dev,
  libpolyclipping-dev,
  libnlopt-dev,
- libnlopt-cxx-dev,
+ libnlopt-cxx-dev | libnlopt-dev,
 Standards-Version: 4.1.2
 Homepage: https://github.com/prusa3d/PrusaSlicer
 Vcs-Browser: https://github.com/tamasmeszaros/libnest2d
