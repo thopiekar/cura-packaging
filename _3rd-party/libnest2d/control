@@ -27,6 +27,9 @@ Package: libnest2d-dev
 Architecture: all
 Depends:
  libnest2d,
+ libpolyclipping-dev,
+ libnlopt-dev,
+ libnlopt-cxx-dev,
  ${misc:Depends},
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
