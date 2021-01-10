@@ -29,9 +29,6 @@ Package: libnest2d-dev
 Architecture: all
 Depends:
  libnest2d,
- libpolyclipping-dev,
- libnlopt-dev,
- libnlopt-cxx-dev,
  ${misc:Depends},
 Description: 2D irregular bin packaging and nesting C++ header-only library
  2D irregular bin packaging and nesting C++ header-only library
