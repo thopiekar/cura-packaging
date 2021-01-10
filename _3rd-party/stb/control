@@ -5,9 +5,9 @@ Maintainer: Thomas Karl Pietrowski <thopiekar@gmail.com>
 Build-Depends:
  debhelper (>= 10),
 Standards-Version: 4.1.2
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: https://anonscm.debian.org/git/collab-maint/stb.git
-#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/stb.git
+Homepage: https://github.com/nothings/stb
+Vcs-Browser: https://github.com/nothings/stb
+Vcs-Git: https://github.com/nothings/stb.git
 
 Package: stb
 Architecture: all
