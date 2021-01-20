@@ -18,8 +18,7 @@ Build-Depends:
  libnest2d-dev,
  libboost-dev,
  libpolyclipping-dev,
- libnlopt-dev,
- libnlopt-cxx-dev | libnlopt-dev,
+ libnlopt-cxx-dev,
 Standards-Version: 3.9.8
 X-Python3-Version: >= 3.4
 Homepage: https://github.com/Ultimaker/pynest2d
