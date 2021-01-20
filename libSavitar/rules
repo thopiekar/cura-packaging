@@ -1,13 +1,13 @@
 #!/usr/bin/make -f
 # See debhelper(7) (uncomment to enable)
 # output every command that modifies files on the build system.
-export DH_VERBOSE = 1
+export DH_VERBOSE=1
 
-CMAKE_COMMON_OPTIONS := -DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH) \
-                        -DBUILD_EXAMPLES:BOOL=OFF
+CMAKE_COMMON_OPTIONS:=-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH) \
+                      -DBUILD_EXAMPLES:BOOL=OFF
 
 %:
-	dh $@ --with python3 --buildsystem=cmake --parallel
+	dh $@ --buildsystem=cmake --with python3 --parallel
 
 override_dh_auto_clean:
 	rm -rf build-*
@@ -15,32 +15,29 @@ override_dh_auto_clean:
 	- rm -rf debian/tmp-dbg
 
 override_dh_auto_configure:
+	# RELEASE WITH DEBUG
 	for PYX in $(shell py3versions -rv) ; do \
 	    mkdir -p build-$${PYX}; \
 	    dh_auto_configure -a \
-                          --builddirectory=build-$${PYX} -- \
-	                      $(CMAKE_COMMON_OPTIONS) \
-	                      -DCMAKE_BUILD_TYPE:STRING="RelWithDebInfo" \
-	                      -DCMAKE_INSTALL_LIBDIR=/usr/lib/$(DEB_HOST_MULTIARCH) \
-	                      -DPYTHON_LIBRARY:FILEPATH=/usr/lib/$(DEB_HOST_MULTIARCH)/libpython$${PYX}m.so \
-	                      -DPYTHON_SITE_PACKAGES_DIR:FILEPATH=/usr/lib/python$${PYX}/dist-packages \
-	                      -DPYTHON_INCLUDE_DIR:FILEPATH=/usr/include/python$${PYX}m \
-	                      -DPYTHON_EXECUTABLE:FILEPATH=/usr/bin/python$${PYX} ; \
+	        --builddirectory=build-$${PYX} -- \
+	        $(CMAKE_COMMON_OPTIONS) \
+	        -DCMAKE_BUILD_TYPE:STRING="RelWithDebInfo" \
+	        -DPYTHON_SITE_PACKAGES_DIR:FILEPATH=/usr/lib/python$${PYX}/dist-packages \
+	        -DPYTHON_EXECUTABLE:FILEPATH=$$(which python$${PYX}) \
+	        -DCMAKE_INSTALL_LIBDIR=/usr/lib/$(DEB_HOST_MULTIARCH) ; \
 	done
 	
 	# DEBUG
 	for PYX in $(shell py3versions -rv) ; do \
 	    mkdir -p build-$${PYX}-dbg; \
 	    dh_auto_configure -a \
-                          --builddirectory=build-$${PYX}-dbg -- \
-	                      $(CMAKE_COMMON_OPTIONS) \
-	                      -DCMAKE_BUILD_TYPE:STRING="Debug" \
-	                      -DCMAKE_INSTALL_LIBDIR=/usr/lib/debug/lib/$(DEB_HOST_MULTIARCH) \
-	                      -DPYTHON_LIBRARY:FILEPATH=/usr/lib/$(DEB_HOST_MULTIARCH)/libpython$${PYX}m.so \
-	                      -DPYTHON_DEBUG_LIBRARY:FILEPATH=/usr/lib/$(DEB_HOST_MULTIARCH)/libpython$${PYX}dm.so \
-	                      -DPYTHON_SITE_PACKAGES_DIR:FILEPATH=/usr/lib/python$${PYX}/dist-packages \
-	                      -DPYTHON_INCLUDE_DIR:FILEPATH=/usr/include/python$${PYX}dm \
-	                      -DPYTHON_EXECUTABLE:FILEPATH=/usr/bin/python$${PYX}dm ; \
+	        --builddirectory=build-$${PYX}-dbg -- \
+	        $(CMAKE_COMMON_OPTIONS) \
+	        -DCMAKE_BUILD_TYPE:STRING="Debug" \
+	        -DPYTHON_SITE_PACKAGES_DIR:FILEPATH=/usr/lib/python$${PYX}/dist-packages \
+	        -DPYTHON_EXECUTABLE:FILEPATH=$$(which python$${PYX}) \
+	        -DCMAKE_INSTALL_LIBDIR=/usr/lib/debug/lib/$(DEB_HOST_MULTIARCH) \
+	        -DPYTHON_DEBUG_LIBRARY:FILEPATH=/usr/lib/$(DEB_HOST_MULTIARCH)/libpython$${PYX}d.so ; \
 	done
 
 override_dh_auto_build:
