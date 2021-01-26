@@ -36,8 +36,10 @@ Provides:
  ${python3:Provides}
 XB-Python3-Version:
  ${python3:Versions}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: pynest2d - CPython bindings for libnest2d
+ Bindings are written in SWIG and allows to be called from Python using Numpy.
+ .
+ This package provides bindings for Python 3
 
 Package: python3-pynest2d-dbg
 Architecture: any
@@ -50,5 +52,7 @@ Provides:
  ${python3:Provides}
 XB-Python3-Version:
  ${python3:Versions}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: pynest2d - CPython bindings for libnest2d
+ Bindings are written in SWIG and allows to be called from Python using Numpy.
+ .
+ This package provides bindings for Python 3 (debug)
