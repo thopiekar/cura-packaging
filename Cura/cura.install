@@ -7,6 +7,7 @@
 /usr/lib/cura/plugins/CuraProfileWriter
 /usr/lib/cura/plugins/FirmwareUpdateChecker
 /usr/lib/cura/plugins/FirmwareUpdater
+/usr/lib/cura/plugins/GCodeReader
 /usr/lib/cura/plugins/GCodeGzReader
 /usr/lib/cura/plugins/GCodeGzWriter
 /usr/lib/cura/plugins/GCodeProfileReader
@@ -17,6 +18,7 @@
 /usr/lib/cura/plugins/ModelChecker
 /usr/lib/cura/plugins/MonitorStage
 /usr/lib/cura/plugins/PerObjectSettingsTool
+/usr/lib/cura/plugins/PostProcessingPlugin
 /usr/lib/cura/plugins/PrepareStage
 /usr/lib/cura/plugins/PreviewStage
 /usr/lib/cura/plugins/RemovableDriveOutputDevice
@@ -26,9 +28,13 @@
 /usr/lib/cura/plugins/SupportEraser
 /usr/lib/cura/plugins/Toolbox
 /usr/lib/cura/plugins/TrimeshReader
+/usr/lib/cura/plugins/UltimakerMachineActions
 /usr/lib/cura/plugins/UFPReader
 /usr/lib/cura/plugins/UFPWriter
+/usr/lib/cura/plugins/UM3NetworkPrinting
+/usr/lib/cura/plugins/USBPrinting
 /usr/lib/cura/plugins/VersionUpgrade
+/usr/lib/cura/plugins/X3DReader
 /usr/lib/cura/plugins/XmlMaterialProfile
 /usr/lib/cura/plugins/XRayView
 /usr/lib/python3/dist-packages/cura

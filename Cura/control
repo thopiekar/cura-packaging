@@ -52,11 +52,24 @@ Recommends:
  python3-pyqt5.qtx11extras,
 Provides:
  cura-plugin-api-3,
+ cura-plugin-gcodereader,
+ cura-plugin-postprocessing,
+ cura-plugin-ultimakermachineactions,
+ cura-plugin-um3networkprinting,
+ cura-plugin-usbprinting,
  cura-plugin-ufpreader,
  cura-plugin-ufpwriter,
+ cura-plugin-x3dreader,
  ${python3:Provides},
 Conflicts:
  cura-plugin-ufpwriter,
+Replaces:
+ cura-plugin-gcodereader,
+ cura-plugin-postprocessing,
+ cura-plugin-ultimakermachineactions,
+ cura-plugin-um3networkprinting,
+ cura-plugin-usbprinting,
+ cura-plugin-x3dreader,
 XB-Python3-Version:
  ${python3:Versions},
 Description: Slicing application for 3-D printers (GUI)
@@ -75,13 +88,7 @@ Package: cura-plugins-all
 Architecture: all
 Depends:
  cura-plugin-curadrive,
- cura-plugin-gcodereader,
- cura-plugin-postprocessing,
  cura-plugin-sliceinfo,
- cura-plugin-ultimakermachineactions,
- cura-plugin-um3networkprinting,
- cura-plugin-usbprinting,
- cura-plugin-x3dreader,
 Provides:
  cura-plugins,
 Enhances:
@@ -121,52 +128,6 @@ Description: Slicing application for 3-D printers - CuraDrive plugin
  .
  This package provides a service, which allows backups of configurations and settings to Ultimaker servers.
 
-Package: cura-plugin-gcodereader
-Architecture: all
-Depends:
- cura-plugin-api-3,
- ${shlibs:Depends},
- ${misc:Depends},
- ${python3:Depends},
-Provides:
- ${python3:Provides},
-XB-Python3-Version:
- ${python3:Versions},
-Description: Slicing application for 3-D printers - GCodeReader plugin
- Cura converts digital 3D models into printing instructions (G-code)
- for your 3D printer. It cuts the model into horizontal slices (layers),
- generates toolpaths to fill them and calculates the amount of material
- to be extruded.
- .
- Cura is easy to use for novices and provide over 200 settings to adjust
- for the expert.  It can output G-Code for several series of 3D printers,
- most notably the Ultimaker.
- .
- This package provides a G-code reader.
-
-Package: cura-plugin-postprocessing
-Architecture: all
-Depends:
- cura-plugin-api-3,
- ${shlibs:Depends},
- ${misc:Depends},
- ${python3:Depends},
-Provides:
- ${python3:Provides},
-XB-Python3-Version:
- ${python3:Versions},
-Description: Slicing application for 3-D printers - PostProcessingPlugin plugin
- Cura converts digital 3D models into printing instructions (G-code)
- for your 3D printer. It cuts the model into horizontal slices (layers),
- generates toolpaths to fill them and calculates the amount of material
- to be extruded.
- .
- Cura is easy to use for novices and provide over 200 settings to adjust
- for the expert.  It can output G-Code for several series of 3D printers,
- most notably the Ultimaker.
- .
- This package provides a Post-Processing plugin.
-
 Package: cura-plugin-sliceinfo
 Architecture: all
 Depends:
@@ -189,99 +150,3 @@ Description: Slicing application for 3-D printers - SliceInfoPlugin plugin
  most notably the Ultimaker.
  .
  This package provides a tool, which sends statistics to Ultimaker.
-
-Package: cura-plugin-ultimakermachineactions
-Architecture: all
-Depends:
- cura-plugin-api-3,
- ${shlibs:Depends},
- ${misc:Depends},
- ${python3:Depends},
-Provides:
- ${python3:Provides},
-XB-Python3-Version:
- ${python3:Versions},
-Description: Slicing application for 3-D printers - UltimakerMachineActions plugin
- Cura converts digital 3D models into printing instructions (G-code)
- for your 3D printer. It cuts the model into horizontal slices (layers),
- generates toolpaths to fill them and calculates the amount of material
- to be extruded.
- .
- Cura is easy to use for novices and provide over 200 settings to adjust
- for the expert.  It can output G-Code for several series of 3D printers,
- most notably the Ultimaker.
- .
- This package provides a functions to run Ultimaker-specific actions.
-
-Package: cura-plugin-um3networkprinting
-Architecture: all
-Depends:
- cura-plugin-api-3,
- ${shlibs:Depends},
- ${misc:Depends},
- ${python3:Depends},
- python3-zeroconf,
-Provides:
- ${python3:Provides},
- cura-extra-plugin-um3networkprinting,
-Conflicts:
- cura-extra-plugin-um3networkprinting,
-Replaces:
- cura-extra-plugin-um3networkprinting,
-XB-Python3-Version:
- ${python3:Versions},
-Description: Slicing application for 3-D printers - UM3NetworkPrinting plugin
- Cura converts digital 3D models into printing instructions (G-code)
- for your 3D printer. It cuts the model into horizontal slices (layers),
- generates toolpaths to fill them and calculates the amount of material
- to be extruded.
- .
- Cura is easy to use for novices and provide over 200 settings to adjust
- for the expert.  It can output G-Code for several series of 3D printers,
- most notably the Ultimaker.
- .
- This package adds the possibility to interact with Ultimaker3 printers over the network.
-
-Package: cura-plugin-usbprinting
-Architecture: all
-Depends:
- cura-plugin-api-3,
- ${shlibs:Depends},
- ${misc:Depends},
- ${python3:Depends},
-XB-Python3-Version:
- ${python3:Versions},
-Description: Slicing application for 3-D printers - USBPrinting plugin
- Cura converts digital 3D models into printing instructions (G-code)
- for your 3D printer. It cuts the model into horizontal slices (layers),
- generates toolpaths to fill them and calculates the amount of material
- to be extruded.
- .
- Cura is easy to use for novices and provide over 200 settings to adjust
- for the expert.  It can output G-Code for several series of 3D printers,
- most notably the Ultimaker.
- .
- This package adds additional functions to be able to print via USB.
-
-Package: cura-plugin-x3dreader
-Architecture: all
-Depends:
- cura-plugin-api-3,
- ${shlibs:Depends},
- ${misc:Depends},
- ${python3:Depends},
-Provides:
- ${python3:Provides},
-XB-Python3-Version:
- ${python3:Versions},
-Description: Slicing application for 3-D printers - x3dreader plugin
- Cura converts digital 3D models into printing instructions (G-code)
- for your 3D printer. It cuts the model into horizontal slices (layers),
- generates toolpaths to fill them and calculates the amount of material
- to be extruded.
- .
- Cura is easy to use for novices and provide over 200 settings to adjust
- for the expert.  It can output G-Code for several series of 3D printers,
- most notably the Ultimaker.
- .
- This package is used to open X3D files in Cura.
