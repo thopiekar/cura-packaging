@@ -18,7 +18,7 @@ override_dh_auto_configure:
 	for PYX in $(shell py3versions -rv) ; do \
 	    mkdir -p build-$${PYX}; \
 	    dh_auto_configure -a \
-                          --builddirectory=build-$${PYX} -- \
+	                      --builddirectory=build-$${PYX} -- \
 	                      $(CMAKE_COMMON_OPTIONS) \
 	                      -DCMAKE_BUILD_TYPE:STRING="RelWithDebInfo" \
 	                      -DPYTHON_SITE_PACKAGES_DIR:FILEPATH=/usr/lib/python$${PYX}/dist-packages \
@@ -30,7 +30,7 @@ override_dh_auto_configure:
 	for PYX in $(shell py3versions -rv) ; do \
 	    mkdir -p build-$${PYX}-dbg; \
 	    dh_auto_configure -a \
-                          --builddirectory=build-$${PYX}-dbg -- \
+	                      --builddirectory=build-$${PYX}-dbg -- \
 	                      $(CMAKE_COMMON_OPTIONS) \
 	                      -DCMAKE_BUILD_TYPE:STRING="Debug" \
 	                      -DPYTHON_SITE_PACKAGES_DIR:FILEPATH=/usr/lib/python$${PYX}/dist-packages \

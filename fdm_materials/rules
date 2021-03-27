@@ -12,4 +12,4 @@ DEB_PACKAGE_VERSION ?= $(shell dpkg-parsechangelog -SVersion | cut -f2 -d":" | c
 #	dh_install --fail-missing
 
 override_dh_auto_test:
-		dh_auto_test || true
+	dh_auto_test || true

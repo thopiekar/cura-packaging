@@ -68,6 +68,9 @@ override_dh_install:
 	    --remaining-packages \
 	    --fail-missing
 
+override_dh_missing:
+	dh_missing --fail-missing
+
 override_dh_strip:
 	dh_strip -ppython3-pynest2d --dbg-package=python3-pynest2d-dbg
 
