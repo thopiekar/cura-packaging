@@ -63,6 +63,12 @@ Provides:
  ${python3:Provides},
 Conflicts:
  cura-plugin-ufpwriter,
+ cura-plugin-gcodereader,
+ cura-plugin-postprocessing,
+ cura-plugin-ultimakermachineactions,
+ cura-plugin-um3networkprinting,
+ cura-plugin-usbprinting,
+ cura-plugin-x3dreader,
 Replaces:
  cura-plugin-gcodereader,
  cura-plugin-postprocessing,
