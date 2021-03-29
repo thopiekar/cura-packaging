@@ -41,6 +41,8 @@ Depends:
  qml-module-qtquick-dialogs (>= 5.10),
  qml-module-qt-labs-settings,
  qml-module-qt-labs-folderlistmodel,
+# um3networkprinting plugin
+ python3-zeroconf,
 Recommends:
  fonts-open-sans,
  cura-resources-firmware,
