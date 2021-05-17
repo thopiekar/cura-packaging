@@ -35,5 +35,5 @@ override_dh_auto_test:
 	    dh_auto_test --builddirectory=build-$${PYX} || true ; \
 	done
 
-override_dh_install:
-	dh_install --fail-missing
+override_dh_missing:
+	dh_missing --fail-missing
